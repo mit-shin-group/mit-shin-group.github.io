@@ -149,7 +149,7 @@ function extra()
     cd(curdir)
 end
 
-function build(; build_cv = true, build_extra = true, clean = false)
+function build(; build_cv = true, build_extra = true, clean = true)
     
     build_cv && cv()
     build_extra && extra()
