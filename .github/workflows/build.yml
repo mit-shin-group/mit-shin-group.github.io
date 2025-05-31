@@ -10,10 +10,24 @@ on:
 jobs:
   build:
     runs-on: [self-hosted]
+    permissions:
+      contents: write
+      pull-requests: write
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
-
       - name: Build website
         run: |
           /home/action-runner/.juliaup/bin/julia --project=. -e "using ShinGroupIO; ShinGroupIO.deploy(; dev = ${{ github.event_name == 'pull_request' }})"
+      - name: Post build success comment
+        if: github.event_name == 'pull_request' && success()
+        uses: actions/github-script@v6
+        with:
+          script: |
+            const commentBody = "✅ Build succeeded! 🎉 Please check https://mit-shin-group.github.io/dev/.";
+            await github.rest.issues.createComment({
+              issue_number: context.issue.number,
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              body: commentBody
+            });
