@@ -32,10 +32,6 @@ To locally host the website, run the following command in the Julia REPL and acc
 julia> ShinGroupIO.serve()
 ```
 
-
-Finally, to deploy the built website to the deployment branch `gh-pages`, run the following command in the Julia REPL:
-```julia-repl
-julia> ShinGroupIO.deploy()
-```
+Finally, to deploy the built website to the deployment branch `gh-pages`, make the PR on this Github repository. Directly running `ShinGroupIO.deploy()` is not allowed for non-admin users.
 
 That's it! If you encounter any issues, please [report an issue](https://github.com/mit-shin-group/mit-shin-group.github.io/issues).
