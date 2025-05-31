@@ -3,9 +3,9 @@ name: build
 on:
   push:
     branches: ["main"]
+  pull_request:
   schedule:
     - cron: '0 * * * *'
-  workflow_dispatch:
 
 jobs:
   build:
@@ -13,6 +13,7 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
+
       - name: Build website
         run: |
-          /home/action-runner/.juliaup/bin/julia --project=. -e 'using ShinGroupIO; ShinGroupIO.build()'
+          /home/action-runner/.juliaup/bin/julia --project=. -e "using ShinGroupIO; ShinGroupIO.deploy(; dev = ${{ github.event_name == 'pull_request' }})"

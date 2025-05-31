@@ -1,6 +1,6 @@
 module ShinGroupIO
 
-using LiveServer, Git
+using LiveServer, Git, FileWatching
 
 const root_dir = joinpath(@__DIR__, "..")
 const content_dir = joinpath(root_dir, "content")
@@ -23,7 +23,7 @@ const KEYWORDS = [
 ]
 const HYPERLINKS = [
     "MIT" => "https://web.mit.edu",
-    "Sungho Shin" => "/people",
+    "Sungho Shin" => "people",
     "Massachusetts Institute of Technology" => "https://web.mit.edu",
     "Chemical Engineering Department" => "https://cheme.mit.edu",
     "Department of Chemical Engineering" => "https://cheme.mit.edu",
@@ -68,15 +68,15 @@ const WATCHDIR = [
     "css",
 ]
 const nav_items =  [
-    "Home" => "/",
-    "Values" => "/values",
-    "People" => "/people",
-    "Research" => "/research",
-    "Publications" => "/publications",
-    "Software" => "/software",
-    "Facilities" => "/facilities",
-    "News" => "/news",
-    # "Join Us!" => "/positions", 
+    "Home" => "",
+    "Values" => "values",
+    "People" => "people",
+    "Research" => "research",
+    "Publications" => "publications",
+    "Software" => "software",
+    "Facilities" => "facilities",
+    "News" => "news",
+    # "Join Us!" => "positions", 
 ]
 
 const abbrvnames = [
@@ -150,7 +150,7 @@ function extra()
     cd(curdir)
 end
 
-function build(; build_cv = true, build_extra = true, clean = true)
+function build(; dev = false, build_cv = true, build_extra = true, clean = true)
     
     build_cv && cv()
     build_extra && extra()
@@ -193,7 +193,7 @@ $jrnl
 <h2>Conference Publications</h2>
 $conf
 """
-    write_html(nav, content, joinpath(output_dir,"publications"))
+    write_html(nav, content, joinpath(output_dir,"publications"); dev)
 
 
     # Read the markdown files and convert them to HTML
@@ -204,7 +204,8 @@ $conf
         write_html(
             nav,
             read(file, String),
-            filename == "index" ? output_dir : joinpath(output_dir,filename)
+            filename == "index" ? output_dir : joinpath(output_dir,filename);
+            dev
         )
     end
 end
@@ -219,13 +220,14 @@ function nav_html(nav_items)
 end
 
 
-function write_html(nav, content, output)
+function write_html(nav, content, output; dev = false)
     html = replace(
         replace(
             read(joinpath(template_dir,"template.html"), String),
             "{ nav }" => nav,
             "{ content }" => content,
         ),
+        "{ base url }" => dev ? "/dev/" : "/",
         "{ recent news }" => five_news(),
         "{ ads }" => join("<hr>" * read(joinpath(ads_dir,ad), String) for ad in ADS),
         KEYWORDS...,
@@ -243,7 +245,7 @@ function _people(name)
             read(joinpath(people_dir,"$name.md"), String)
         )
     )
-    photo = "/img/$name.jpg"
+    photo = "img/$name.jpg"
     return """
 <div class="full">
   <div class="left">
@@ -290,7 +292,9 @@ function commit(msg)
     nothing
 end
 
-function deploy()
+function deploy(; dev = true)
+    build(; dev)
+    
     # Define the repository URL and the branch to deploy to
     repo_url = "git@github.com:mit-shin-group/mit-shin-group.github.io.git"
     branch = "gh-pages"
@@ -302,9 +306,11 @@ function deploy()
     tmp_dir = mktempdir()
     run(`$(git()) clone --depth 1 --branch $branch $repo_url $tmp_dir`)
 
+    dst_dir = joinpath(tmp_dir, dev ? "dev" : "")
+    
     # Copy the contents of the build directory to the repository directory
     for f in readdir(build_dir, join=true)
-        cp(joinpath(build_dir, f), tmp_dir; force=true)
+        run(`cp -r $f $dst_dir`)
     end
 
     # Commit and push the changes
@@ -330,7 +336,7 @@ $(prod("<li>\n$item\n</li>\n" for item in items))</ul>
 """    
 end
 
-function develop()
+function develop(args...; kwargs...)
     watch_folder(root_dir) do event
         for f in event.paths
             v = relpath(splitdir(f)[1], root_dir) 
@@ -338,9 +344,9 @@ function develop()
                 return
             end
         end
-        build()
+        build(args...; kwargs...)
     end
-end
+end 
 
 end # module
 
