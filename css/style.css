@@ -113,6 +113,7 @@ html, body {
     height: auto; /* Maintain aspect ratio */
     padding-top: 10px;
     padding-bottom: 10px;
+    max-width: 800px;
 }
 
 .research {
