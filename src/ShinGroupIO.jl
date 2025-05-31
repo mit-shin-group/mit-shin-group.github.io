@@ -286,6 +286,8 @@ function commit(msg)
         run(`$(git()) commit -m "$msg"`)
         run(`$(git()) push`)
     end
+
+    nothing
 end
 
 function deploy()
@@ -314,6 +316,8 @@ function deploy()
 
     # Clean up the temporary directory
     rm(tmp_dir; recursive=true)
+    
+    nothing
 end
 
 function five_news()
