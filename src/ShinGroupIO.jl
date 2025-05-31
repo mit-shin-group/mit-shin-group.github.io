@@ -23,6 +23,7 @@ const KEYWORDS = [
 ]
 const HYPERLINKS = [
     "MIT" => "https://web.mit.edu",
+    "Sungho Shin" => "/people",
     "Massachusetts Institute of Technology" => "https://web.mit.edu",
     "Chemical Engineering Department" => "https://cheme.mit.edu",
     "Department of Chemical Engineering" => "https://cheme.mit.edu",
@@ -32,7 +33,7 @@ const HYPERLINKS = [
     "nonlinear programs" => "https://en.wikipedia.org/wiki/Nonlinear_programming",
     "nonlinear programming" => "https://en.wikipedia.org/wiki/Nonlinear_programming",
     "MadNLP" => "https://github.com/MadNLP/MadNLP.jl",
-    "ExaModels" => "https://github.com/mit-shin-group/ExaModels.jl",
+    "ExaModels" => "https://github.com/exanauts/ExaModels.jl",
     "model predictive control" => "https://en.wikipedia.org/wiki/Model_predictive_control",
     "graph theory" => "https://en.wikipedia.org/wiki/Graph_theory",
     "statistics" => "https://en.wikipedia.org/wiki/Statistics",
@@ -301,7 +302,7 @@ function deploy()
 
     # Copy the contents of the build directory to the repository directory
     for f in readdir(build_dir, join=true)
-        run(`cp -r $f $tmp_dir`)
+        cp(joinpath(build_dir, f), tmp_dir; force=true)
     end
 
     # Commit and push the changes

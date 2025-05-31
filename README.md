@@ -5,7 +5,6 @@ This package is used for building and deploying website [shin.mit.edu](shin.mit.
 ## Dependencies
 Several dependencies need to be installed to use this package.
 - julia
-- git
 - texlive
 - bibtex2html
 - pdf2svg
@@ -13,8 +12,8 @@ Several dependencies need to be installed to use this package.
 ## Usage
 Once all the dependencies are obtained, run the following to instantiate the package:
 ```shell
-$ git clone git@github.com:sshin23/sshin23.github.io.git
-$ cd sshin23.github.io
+$ git clone git@github.com:mit-shin-group/mit-shin-group.github.io.git
+$ cd mit-shin-group.github.io
 $ julia --project -e 'using Pkg; Pkg.instantiate()'
 ```
 
@@ -39,4 +38,4 @@ Finally, to deploy the built website to the deployment branch `gh-pages`, run th
 julia> ShinGroupIO.deploy()
 ```
 
-That's it! If you encounter any issues, please [report an issue](https://github.com/sshin23/sshin23.github.io/issues).
+That's it! If you encounter any issues, please [report an issue](https://github.com/mit-shin-group/mit-shin-group.github.io/issues).
