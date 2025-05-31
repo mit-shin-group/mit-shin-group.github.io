@@ -1,4 +1,4 @@
-module ShinIO
+module ShinGroupIO
 
 using LiveServer, Git
 
@@ -32,7 +32,7 @@ const HYPERLINKS = [
     "nonlinear programs" => "https://en.wikipedia.org/wiki/Nonlinear_programming",
     "nonlinear programming" => "https://en.wikipedia.org/wiki/Nonlinear_programming",
     "MadNLP" => "https://github.com/MadNLP/MadNLP.jl",
-    "ExaModels" => "https://github.com/sshin23/ExaModels.jl",
+    "ExaModels" => "https://github.com/mit-shin-group/ExaModels.jl",
     "model predictive control" => "https://en.wikipedia.org/wiki/Model_predictive_control",
     "graph theory" => "https://en.wikipedia.org/wiki/Graph_theory",
     "statistics" => "https://en.wikipedia.org/wiki/Statistics",
@@ -289,7 +289,7 @@ end
 
 function deploy()
     # Define the repository URL and the branch to deploy to
-    repo_url = "git@github.com:sshin23/sshin23.github.io.git"
+    repo_url = "git@github.com:mit-shin-group/mit-shin-group.github.io.git"
     branch = "gh-pages"
 
     # Define the build directory

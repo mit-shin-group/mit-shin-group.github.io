@@ -1,17 +1,12 @@
-name = "ShinIO"
-uuid = "fcae7b0f-4e5b-4531-9c11-1b0c3fc9f132"
-authors = ["Sungho Shin <sshin@anl.gov>"]
+name = "ShinGroupIO"
+uuid = "64b85ef0-73f0-46f0-9fe8-0c3edc37abe9"
+authors = ["Sungho Shin <sushin@mit.edu>"]
 version = "0.1.0"
 
 [deps]
-BibParser = "13533e5b-e1c2-4e57-8cef-cac5e52f6474"
-Bibliography = "f1be7e48-bf82-45af-a471-ae754a193061"
 Git = "d7ba0133-e1db-5d97-8f8c-041e4b3a1eb2"
-Git_jll = "f8c6e375-362e-5223-8a59-34ff63f689eb"
 LiveServer = "16fef848-5104-11e9-1b77-fb7a48bbb589"
 
 [compat]
-BibParser = "0.2.2"
-Bibliography = "0.3.0"
 Git = "1.4.0"
-Git_jll = "2.47.1"
+LiveServer = "1.4.0"
