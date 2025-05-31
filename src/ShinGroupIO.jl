@@ -18,7 +18,7 @@ const ADS = [
     "ad1.html" 
  ]
 const KEYWORDS = [
-    "{ year }" => "2023",
+    "{ year }" => "2025",
     "{ email }" => "sushin@mit.edu",
 ]
 const HYPERLINKS = [
@@ -301,7 +301,7 @@ function deploy()
 
     # Copy the contents of the build directory to the repository directory
     for f in readdir(build_dir, join=true)
-        cp(joinpath(build_dir, f), tmp_dir; force=true)
+        run(`cp -r $f $tmp_dir`)
     end
 
     # Commit and push the changes

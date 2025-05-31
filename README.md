@@ -1,4 +1,4 @@
-# ShinIO
+# ShinGroupIO
 
 This package is used for building and deploying website [shin.mit.edu](shin.mit.edu). 
 
@@ -25,18 +25,18 @@ $ julia --project
 
 Then, run the following command:
 ```julia-repl
-julia> using ShinIO; ShinIO.build()
+julia> using ShinGroupIO; ShinGroupIO.build()
 ```
 
 To locally host the website, run the following command in the Julia REPL and access it through `127.0.0.1:8000`:
 ```julia-repl
-julia> ShinIO.serve()
+julia> ShinGroupIO.serve()
 ```
 
 
 Finally, to deploy the built website to the deployment branch `gh-pages`, run the following command in the Julia REPL:
 ```julia-repl
-julia> ShinIO.deploy()
+julia> ShinGroupIO.deploy()
 ```
 
 That's it! If you encounter any issues, please [report an issue](https://github.com/sshin23/sshin23.github.io/issues).
