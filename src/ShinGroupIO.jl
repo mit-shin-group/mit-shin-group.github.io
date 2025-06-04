@@ -87,8 +87,11 @@ const dependencies = [
     "pdflatex",
     "pdf2svg",
 ]
+const cvversions = [
+    "shin", "shin-short",
+]
 const bibfiles = [
-    "prep", "thes", "jrnl", "conf", "tech", "invt", "pres"
+    "prep", "thes", "jrnl", "conf", "tech", "invt", "pres", "selected"
 ]
 const figfiles = [
     "fig-1",
@@ -117,23 +120,27 @@ function cv()
     curdir = @__DIR__
 
     cd(tex_dir)
-    run(`$PDFLATEX shin`, stdin, devnull, stderr)
-    for f in bibfiles
-        try
-            run(`$BIBTEX $f`, stdin, devnull, stderr)
-        catch e
-        end
-        
-        write(
-            joinpath(tex_dir, "$f.bbl"),
-            replace(
-                read(joinpath(tex_dir, "$f.bbl"), String),
-                "S. Shin" => "{\\bf S. Shin}"
+
+    for cvname in cvversions
+        run(`$PDFLATEX $cvname`, stdin, devnull, stderr)
+        for f in bibfiles
+            try
+                run(`$BIBTEX $f`, stdin, devnull, stderr)
+            catch e
+            end
+            
+            write(
+                joinpath(tex_dir, "$f.bbl"),
+                replace(
+                    read(joinpath(tex_dir, "$f.bbl"), String),
+                    "S. Shin" => "{\\bf S. Shin}"
+                )
             )
-        )
+        end
+        run(`$PDFLATEX $cvname`, stdin, devnull, stderr)
+        run(`$PDFLATEX $cvname`, stdin, devnull, stderr)
     end
-    run(`$PDFLATEX shin`, stdin, devnull, stderr)
-    run(`$PDFLATEX shin`, stdin, devnull, stderr)
+    
     cd(curdir)
 end
 
