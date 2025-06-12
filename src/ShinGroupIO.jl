@@ -58,6 +58,8 @@ const HYPERLINKS = [
     "decision-making problems"=>"https://en.wikipedia.org/wiki/Optimization_problem",
     "mathematical optimization problems"=>"https://en.wikipedia.org/wiki/Optimization_problem",
     "automatic differentiation"=>"https://en.wikipedia.org/wiki/Automatic_differentiation",
+    "techno-economic assessment"=>"https://en.wikipedia.org/wiki/Techno-economic_assessment",
+    "environmental assessment"=>"https://en.wikipedia.org/wiki/Life-cycle_assessment",
 ]
 
 const WATCHDIR = [
