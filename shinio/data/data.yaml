@@ -325,10 +325,10 @@ facilities:
   entries:
     - name: "shin-login"
       description: |
-        A storage node equipped with 20TB of SSD storage, running Linux Ubuntu 24.04 LTS. The storage node is used for hosting the home directories of the project members, which will be used for storing the source code and research results. The system utilizes a ZFS file system with a RAID configuration for data redundancy and integrity, with daily backups to an external hard drive.
+        A storage node equipped with 20TB of SSD storage, running Linux Ubuntu 24.04 LTS. The storage node is used for hosting the home directories. The system utilizes a ZFS file system with a RAID configuration for data redundancy and integrity, with daily backups to an external hard drive.
     - name: "shin-compute-000"
       description: |
-        A compute node equipped with two Intel Xeon Platinum 8160 CPUs (48 cores), 384GB RAM, and two NVIDIA GV100 GPUs, running Linux Ubuntu 24.04 LTS. This node is designated for the development and testing of software based on NVIDIA GPU architecture. This server will be used for hosting a Jupyter notebook server for tutorial sessions at conferences and workshops, as well as for the 4-week MIT IAP course on GPU-accelerated nonlinear optimization.      
+        A compute node equipped with two Intel Xeon Platinum 8160 CPUs (48 cores), 384GB RAM, and two NVIDIA GV100 GPUs, running Linux Ubuntu 24.04 LTS. This node is designated for the development and testing of software based on NVIDIA GPU architecture. 
     - name: "shin-compute-001"
       description: |
         A compute node equipped with two Intel Xeon Gold 6130 CPUs (32 cores), 256GB RAM, and two NVIDIA GV100 GPUs, running Linux Ubuntu 24.04 LTS. This node is designated for the development and testing of software based on NVIDIA GPU architecture.
