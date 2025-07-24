@@ -197,7 +197,7 @@ software:
       description: "ExaModelsPower.jl is a Julia package for modeling and solving power systems optimization problems, built on top of ExaModels.jl."
     
 news:
-  - date: "July 2024"
+  - date: "July 2025"
     description: |
       Our paper "Near-Optimal Performance of Stochastic Model Predictive Control" is accepted for publication in Mathematics of Operations Research
     link: "https://arxiv.org/abs/2210.08599"
