@@ -7,11 +7,11 @@ def main():
     args = parser.parse_args()
 
     if args.action == "build":
-        shinmitedu.build()
+        shinio.build()
     elif args.action == "serve":
-        shinmitedu.serve()
+        shinio.serve()
     elif args.action == "deploy":
-        shinmitedu.deploy()
+        shinio.deploy()
         
 if __name__ == "__main__":
     main()
