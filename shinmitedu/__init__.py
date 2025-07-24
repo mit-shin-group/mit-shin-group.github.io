@@ -85,14 +85,7 @@ def generate_publications_html(output):
     generate_html(output, content)
 
 def generate_index_html(output):
-    news_html = "\n".join([
-        f"""
-        <li>
-        {news['description']} <i>{news['date']}</i> [ <a href="{news['link']}"> Link </a> ]
-        </li>
-        """ for news in DATA.get('news', '')
-    ])
-
+    news_html = formatted_news(DATA.get('news', '')[:5])  # Limit to the first 5 news items
     packages_html = "\n".join([
         f"""
         <li>
@@ -103,26 +96,29 @@ def generate_index_html(output):
 
     # Generate HTML list for publications
     publications_html = formatted_bib(SELECTED_BIB, 'S')
+    index = DATA.get('index', [])
+    middle = "<hr>\n".join([
+        f"""
+        <h2>{entry['name']}</h2>
+        <p>{entry['description']}</p>
+        <p><a href="{entry['link']['url']}">{entry['link']['description']} >></a></p>
+        """
+        for entry in index['entries']])
 
     content = f"""
     <h1>Home</h1>
     <img class="home" src=/assets/img/index.jpg alt="photo" class="img-fluid">
     <p>
-        {DATA.get('intro', '')}
+        {index['description']}
     </p>
     <hr>
-    <h2>Group Overview</h2>
-    <p>
-        {DATA.get('overview', '')}
-    </p>
-    <p>
-    <a href="research">Read more about our research >></a>
+        {middle}
     <hr>
     </p>
     <h2>News</h2>
-    <ul>
+    <table>
         {news_html}
-    </ul>
+    </table>
     <p>
     <a href="news">See more news >></a>
     </p>
@@ -158,21 +154,36 @@ def generate_values_html(output):
     """
     generate_html(output, content)
 
+def generate_research_html(output):
+    research = DATA.get('research', [])
+    content =  f"""
+    <h1>Research</h1>
+    { research.get('description', '') }
+    <hr>
+    {
+        "<hr>\n".join([f"""
+    <div class="row">
+    <div class="col-md-6">
+    <h2>{res['name']}</h2>
+    {res['description']}
+    </div>
+    <div class="col-md-6 d-flex justify-content-center">
+    <img src={res['img']} class="research">
+    </div>
+    </div>
+    """ for res in research['entries']])
+    }
+    """
+    generate_html(output, content)
+    
 def generate_news_html(output):
-    news = DATA.get('news', [])
     """Generates the news page."""
-    news_html = "\n".join([
-        f"""
-        <li>
-        {news['description']}  <i>{news['date']}</i> [ <a href="{news['link']}"> Link </a> ]
-        </li>
-        """ for news in DATA.get('news', '')
-    ])
+    news_html = formatted_news(DATA.get('news', []))
     content = f"""
     <h1>News</h1>
-    <ul>
+    <table>
     {news_html}
-    </ul>
+    </table>
     """
     generate_html(output, content)
 
@@ -218,6 +229,12 @@ def generate_facilities_html(output):
     """
     generate_html(output, content)
 
+def formatted_news(news):
+    return "\n".join([
+        f"""
+        <tr valign="top"><td width="120px"><i>{news['date']}</i></td> <td>{news['description']} [ <a href="{news['link']}"> Link </a> ]<td></tr>
+        """ for news in news])
+        
 def formatted_social(social):
     """Formats the social media links into HTML."""
     if not social:
@@ -325,7 +342,8 @@ def build():
     generate_software_html(os.path.join(BUILD_DIR, "software"))
     generate_news_html(os.path.join(BUILD_DIR, "news"))
     generate_publications_html(os.path.join(BUILD_DIR, "publications"))
-        
+    generate_research_html(os.path.join(BUILD_DIR, "research"))
+    
     # Create a CNAME file
     cname_path = os.path.join(BUILD_DIR, "CNAME")
     with open(cname_path, "w") as f:
@@ -378,218 +396,5 @@ def deploy():
     subprocess.run(['git', 'push', '--force', '--set-upstream', 'origin', branch_name], cwd=BUILD_DIR, check=True)
 
     print("Successfully deployed to GitHub Pages.")
-# import os
-# import subprocess
-# from pathlib import Path
-# import markdown
-# import shutil
-
-# root_dir = Path(__file__).parent.parent
-# content_dir = root_dir / "content"
-# template_dir = root_dir / "template"
-# people_dir = root_dir / "people"
-# img_dir = root_dir / "img"
-# css_dir = root_dir / "css"
-# bib_dir = root_dir / "bib"
-# ads_dir = root_dir / "ads"
-# tex_dir = root_dir / "tex"
-# output_dir = root_dir / "build"
-# extra_dir = root_dir / "extra"
-
-# ADS = ["ad1.html"]
-# KEYWORDS = {
-#     "{ year }": "2025",
-#     "{ email }": "sushin@mit.edu",
-# }
-# HYPERLINKS = {
-#     "MIT": "https://web.mit.edu",
-#     "Sungho Shin": "people",
-#     "Massachusetts Institute of Technology": "https://web.mit.edu",
-#     # ... (other hyperlinks)
-#     "email Sungho": "mailto:sushin@mit.edu",
-# }
-
-# WATCHDIR = ["build", "content", "template", "img", "css"]
-
-# abbrvnames = ["S. Shin"]
-# dependencies = ["bibtex2html", "pdflatex", "pdf2svg"]
-# cvversions = ["shin", "shin-short"]
-# bibfiles = ["prep", "thes", "jrnl", "conf", "tech", "invt", "pres", "selected"]
-# figfiles = ["fig-1", "fig-2", "fig-3", "fig-4"]
-
-# PDFLATEX = 'pdflatex -halt-on-error'
-# BIBTEX = 'bibtex -terse'
-# BIBTEX2HTML = 'bibtex2html'
-# PDF2SVG = 'pdf2svg'
-
-# def run(command):
-#     subprocess.run(command, shell=True, check=True)
-
-# def check_dependencies():
-#     for dep in dependencies:
-#         try:
-#             run(f"which {dep}")
-#         except subprocess.CalledProcessError:
-#             print(f"Error: Dependency {dep} is not installed. Please install it to build the website.")
-#             return False
-#     return True
-
-# def build_cv():
-#     print("Building CV")
-#     os.chdir(tex_dir)
-
-#     for cvname in cvversions:
-#         run(f"{PDFLATEX} {cvname}")
-#         for f in bibfiles:
-#             try:
-#                 run(f"{BIBTEX} {f}")
-#             except subprocess.CalledProcessError:
-#                 pass
-            
-#             with open(f"{tex_dir}/{f}.bbl") as file:
-#                 content = file.read().replace("S. Shin", "{\\bf S. Shin}")
-#             with open(f"{tex_dir}/{f}.bbl", "w") as file:
-#                 file.write(content)
-#         run(f"{PDFLATEX} {cvname}")
-#         run(f"{PDFLATEX} {cvname}")
-
-# def build_extra():
-#     print("Building Extra")
-#     os.chdir(extra_dir)
-#     for f in figfiles:
-#         run(f"{PDFLATEX} {f}")
-#         run(f"{PDF2SVG} {f}.pdf {f}.svg")
-#         os.replace(f"{extra_dir}/{f}.svg", f"{img_dir}/{f}.svg")
-
-# def build(dev=False, cv=True, extra=True, clean=True):
-#     if not check_dependencies():
-#         return
-    
-#     if cv:
-#         build_cv()
-#     if extra:
-#         build_extra()
-    
-#     print("Building website")
-    
-#     if clean:
-#         if output_dir.exists():
-#             for item in output_dir.glob("*"):
-#                 if item.is_dir():
-#                     shutil.rmtree(item)
-#                 else:
-#                     item.unlink()
-#     output_dir.mkdir(exist_ok=True)
-#     (output_dir / "img").mkdir(exist_ok=True)
-#     (output_dir / "css").mkdir(exist_ok=True)
-    
-#     for folder in ["img", "css"]:
-#         os.replace(root_dir / folder, output_dir / folder)
-    
-#     os.replace(tex_dir / "shin.pdf", output_dir / "shin.pdf")
-
-#     nav = nav_html(nav_items)
-
-#     html_names = [name.replace(" ", "&nbsp;") for name in abbrvnames]
-#     prep = publication(bib_dir / "prep.bib", names=html_names, label="P")
-#     jrnl = publication(bib_dir / "jrnl.bib", names=html_names, label="J")
-#     conf = publication(bib_dir / "conf.bib", names=html_names, label="C")
-    
-#     content = f"""
-# <h1>Publications</h1>
-# <h2>Preprints</h2>
-# {prep}
-# <hr>
-# <h2>Journal Publications</h2>
-# {jrnl}
-# <hr>
-# <h2>Conference Publications</h2>
-# {conf}
-# """
-#     write_html(nav, content, output_dir / "publications", dev)
-
-#     for f in content_dir.iterdir():
-#         if f.is_file():
-#             filename = f.stem
-#             with open(f, "r") as file:
-#                 content = file.read()
-#             write_html(nav, content, output_dir if filename=="index" else output_dir / filename, dev)
-
-# def nav_html(nav_items):
-#     nav_html = ""
-#     for name, url in nav_items.items():
-#         nav_html += f'<li class="nav-item"><a class="nav-link" href="{url}">{name}</a></li>'
-#     return nav_html
-
-# def write_html(nav, content, output, dev=False):
-#     with open(template_dir / "template.html") as file:
-#         html = file.read()
-    
-#     html = html.replace("{ nav }", nav).replace("{ content }", content)
-#     html = html.replace("{ base url }", "/dev/" if dev else "/")
-    
-#     output.mkdir(parents=True, exist_ok=True)
-#     with open(output / "index.html", "w") as file:
-#         file.write(html)
-
-# def publication(f, names=[], label=""):
-#     output = "temp.html"
-#     run(f"{BIBTEX2HTML} -nf pdf pdf -nf youtube YouTube -nf proquest ProQuest -nf preprint preprint -q -r -s abbrv -revkeys -nodoc -nofooter -nobibsource -o {output} {f}")
-
-#     with open(output, "r") as file:
-#         result = file.read()
-    
-#     os.remove(output)
-    
-#     for name in names:
-#         result = result.replace(name, f"<strong>{name}</strong>")
-
-#     result = result.replace("[<a name", f"[{label}<a name").replace("<sup>*</sup>", "*")
-#     result = result.replace("http://arxiv.org/abs/arXiv:", "https://arxiv.org/abs/")
-    
-#     return result
-
-# def serve():
-#     os.system(f"live-server {output_dir}")
-
-# def commit(msg):
-#     run(f"git add -A")
-#     run(f"git commit -m '{msg}'")
-#     run(f"git push")
-
-# def deploy(dev=True):
-#     build(dev=dev)
-    
-#     repo_url = "git@github.com:mit-shin-group/mit-shin-group.github.io.git"
-#     branch = "gh-pages"
-#     build_dir = root_dir / "build"
-    
-#     tmp_dir = Path("tmp_dir")
-#     run(f"git clone --depth 1 --branch {branch} {repo_url} {tmp_dir}")
-    
-#     dst_dir = tmp_dir / ("dev" if dev else "")
-    
-#     for f in build_dir.iterdir():
-#         if f.is_file() or f.is_dir():
-#             os.replace(f, dst_dir / f.name)
-
-#     os.chdir(tmp_dir)
-#     run("git add -A")
-#     run("git commit -m 'Deploy website'")
-#     run(f"git push origin {branch}")
-    
-#     os.rmdir(tmp_dir)
-
-# def five_news():
-#     with open(root_dir / "content" / "news.html") as file:
-#         news = file.read()
-#     items = [item.split("</li>")[1] for item in news.split("<li>")][2:6]
-#     return "<ul>" + "".join(f"<li>{item.strip()}</li>" for item in items) + "</ul>"
-
-# def develop(*args, **kwargs):
-#     # Implement file watching logic here, using watchdog
-#     pass
-
-
 
 

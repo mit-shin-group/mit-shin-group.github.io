@@ -2,30 +2,48 @@ title: "ShinGroup @ MIT"
 email: "sushin@mit.edu"
 domain: "shin.mit.edu"
 
-intro: >
-  Welcome to the Shin Group’s website! We are a research group at the {Massachusetts Institute of Technology}, led by Professor {Sungho Shin}.
 
-overview: >
-  <p>
-  Our research group is dedicated to tackling the mathematical, computational, and practical challenges involved in making systematic decisions in complex systems. We strive to make contributions in the fields of {mathematical optimization}, {control theory}, {machine learning}, {process systems engineering}, and {energy systems}.
-  </p>
-  <p>
-  Here are some of our specific research interests:
-    <ul>
-    <li>
-    Developing scalable algorithms capable of addressing challenging {decision-making problems} in various engineering and society domains.
-    </li>
-    <li>
-    Advancing our understanding and developing algorithms for {machine learning} methods in {control} problems. 
-    </li>
-    <li> 
-    Building computational infrastructure for scalable and data-driven decision-making by harnessing the capabilities of modern  {high-performance computing}, particularly through the use of {GPU computing}.
-    </li>
-    <li>
-    Making tangible impacts in decision-making practices within the domains of {process systems engineering} and {energy systems} by introducing new modeling paradigms, algorithms, and software tools. 
-    </li>
-    </ul>
-    </p>
+index:  
+  description: >
+    Welcome to the Shin Group’s website! We are a research group at the {Massachusetts Institute of Technology}, led by Professor {Sungho Shin}.
+  entries:
+    - name: "Group Overview"
+      link:
+        description: "Learn more about our research"
+        url: "research"
+      description: >
+        <p>
+        Our research group is dedicated to tackling the mathematical, computational, and practical challenges involved in making systematic decisions in complex systems. We strive to make contributions in the fields of {mathematical optimization}, {control theory}, {machine learning}, {process systems engineering}, and {energy systems}.
+        </p>
+        <p>
+        Here are some of our specific research interests:
+          <ul>
+          <li>
+          Developing scalable algorithms capable of addressing challenging {decision-making problems} in various engineering and society domains.
+          </li>
+          <li>
+          Advancing our understanding and developing algorithms for {machine learning} methods in {control} problems. 
+          </li>
+          <li> 
+          Building computational infrastructure for scalable and data-driven decision-making by harnessing the capabilities of modern  {high-performance computing}, particularly through the use of {GPU computing}.
+          </li>
+          <li>
+          Making tangible impacts in decision-making practices within the domains of {process systems engineering} and {energy systems} by introducing new modeling paradigms, algorithms, and software tools. 
+          </li>
+          </ul>
+          </p>
+    - name: "PSE Seminar Series"
+      link:
+        description: "Learn more about PSE Seminar Series"
+        url: "https://pse-seminar.mit.edu"  
+      description: |
+        <a href="">Shin group</a> and <a href="https://web.mit.edu/braatzgroup/">Braatz group</a> are co-hosting the <a href="https://pse-seminar.mit.edu">MIT Process Systems Engineering Seminar Series</a>. This seminar series features talks by leading researchers in the field of process systems engineering, covering a wide range of topics such as process control, process design, optimization, machine learning, data analytics, and their applications in diverse areas. Open to the public, the seminar series offers a great opportunity to learn about the latest research in process systems engineering. You can receive seminar information by subscribing to our <a href="https://mailman.mit.edu/mailman/listinfo/pse-seminar">mailing list</a>. We hope to see you at the next seminar!
+    - name: "MadSuite: An Optimization Software Suite for GPUs"
+      link:
+        description: "Learn more about MadSuite"
+        url: "https://madsuite.org"
+      description: |
+        MadSuite is a suite of open-source optimization software deisgned to support GPU acceleration. The software tools within this suite encompasses modeling library, optimization solvers, linear system solvers, and additional utility tools. Shin Group is actively contributing to the development of MadSuite.
 
 values:
   description: >    
@@ -316,3 +334,106 @@ facilities:
     - name: "shin-compute-002"
       description: |
         A compute node equipped with two Intel Xeon Gold 6130 CPUs (32 cores), 256GB RAM, along with a Radeon VII GPU, running Linux Ubuntu 24.04 LTS. The Radeon VII GPU supports development and testing of the proposed software on AMD accelerator-based HPC systems, such as the Frontier supercomputer at Oak Ridge National Laboratory.
+
+research:
+  description: |
+    Our research group is dedicated to tackling the mathematical, computational, and practical challenges involved in making systematic decisions in complex systems. We strive to make contributions in the fields of <a href="https://en.wikipedia.org/wiki/Mathematical_optimization">mathematical optimization</a>, <a href="https://en.wikipedia.org/wiki/Control_theory">control theory</a>, and <a href="https://en.wikipedia.org/wiki/Machine_learning">machine learning</a>. We aim to make practical impacts in the area of <a href="https://en.wikipedia.org/wiki/Systems_engineering">process systems engineering</a> and <a href="https://en.wikipedia.org/wiki/Energy_systems">energy systems</a> via the introduction of new modeling paradigms, algorithms, and software tools. We leverage a wide range of tools and methodologies for our research; examples include but are not confined to <a href="https://en.wikipedia.org/wiki/Graph_theory">graph theory</a>, <a href="https://en.wikipedia.org/wiki/Statistics">statistics</a>, <a href="https://en.wikipedia.org/wiki/Reinforcement_learning">reinforcement learning</a>, <a href="https://en.wikipedia.org/wiki/Graphics_processing_unit">GPU computing</a>, <a href="https://en.wikipedia.org/wiki/Distributed_computing">distributed computing</a>, and the <a href="https://julialang.org/">Julia Language</a>.
+  entries:
+    - name: "Scalable Optimization"
+      img: "/assets/img/fig-1.svg"
+      description: |
+        <p>The decision-making for complex systems requires solving challenging optimization problems. This complexity can stem from dynamic behaviors, uncertainties, multi-scale behaviors, network interconnections, and data-driven surrogate models. When formulated as <a href="https://en.wikipedia.org/wiki/Optimization_problem">mathematical optimization problems</a>, these problems often contain millions of decision variables and constraints, surpassing the capabilities of existing algorithms and software tools.</p>
+        <p>Our research group is interested in developing algorithms and software tools tailored to these complex decision-making problems. Leveraging the tools from <a href="https://en.wikipedia.org/wiki/Graph_theory">graph theory</a>, <a href="https://en.wikipedia.org/wiki/Distributed_computing">distributed computing</a>, and <a href="https://en.wikipedia.org/wiki/Numerical_linear_algebra">numerical linear algebra</a>, we aim to enable scalable solutions of such complex optimization problems. </p>
+        <p>Some specific research projects are as follows.
+        <ul>
+        <li>
+        Graph-based decomposition algorithms for large-scale optimization problems.
+        <li>
+        Characterizing the performance and robustness of the decentralized decision-making methods.
+        <li>
+        Designing scalable computing strategies for optimization problems utilizing data-driven surrogate models.
+        <li>
+        Designing systems that facilitate effective decentralization.
+        </ul>
+        </p>
+    - name: "Learning for Control"
+      img: "/assets/img/fig-2.svg"
+      description: |
+        <p>
+        In a wide range of applications, the control system must operate within uncertain and dynamic environments, often with only partial observation of the system. Maintaining stability, robustness, and high operational performance under such conditions presents a formidable challenge, necessitating the study of data-driven control methods.
+        </p>
+        <p>
+        Our research group is dedicated to the development of data-driven control methods tailored for complex physical systems, where data may be expensive and only a partial understanding of the system is available. Leveraging the tools from <a href="https://en.wikipedia.org/wiki/Control_theory">control theory</a>, <a href="https://en.wikipedia.org/wiki/Statistics">statistics</a>, and <a href="https://en.wikipedia.org/wiki/Reinforcement_learning">reinforcement learning</a>, we aim  to advance the fundamental understanding and to create novel computational strategies for data-driven control. 
+        </p>
+        <p>
+        Specific research focus areas are as follows.
+        <ul>
+        <li>
+        Studying the fundamental issues of data-driven control methods, such as sample complexity, regret, and computational complexity.
+        <li>
+        Addressing the sample complexity issue of data-driven control methods via the exploitation of system structure.
+        <li>
+        Developing the system identification and control methods for non-traditional sensors and actuators (e.g., image-based control)
+        </ul>
+        </p>        
+    - name: "High-Performance Computing"
+      img: "/assets/img/fig-3.svg"
+      description: |
+        <p>
+        State-of-the-art numerical software tools have made significant progress in solving optimization problems at a moderately large scale. However, they still face limitations when dealing with extremely large-scale problems that involve more than millions of variables. Fortunately, recent advancements in <a href="https://en.wikipedia.org/wiki/Graphics_processing_unit">GPU computing</a> and the introduction of <a href="https://en.wikipedia.org/wiki/Exascale_computing">exascale supercomputers</a> present exciting opportunities to develop more efficient and versatile numerical optimization tools. 
+        </p>
+        <p>
+        Our research group aims to enhance our capabilities to solve such large-scale optimization problems by harnessing the power of <a href="https://en.wikipedia.org/wiki/High_performance_computing">high-performance computing</a>, especially by exploiting <a href="https://en.wikipedia.org/wiki/Graphics_processing_unit">GPU computing</a> capabilities. This requires developing new algorithmic ideas as well as implementing them as efficient numerical software packages. 
+        </p>
+        <p>
+        Specifically, we focus on the following areas:
+        <ul>
+          <li>
+          Development of a comprehensive nonlinear optimization framework that can fully exploit the capabilities of DOE's leadership-class supercomputers like <a href="https://en.wikipedia.org/wiki/Aurora_(supercomputer)">Aurora</a>, <a href="https://en.wikipedia.org/wiki/Summit_(supercomputer)">Summit</a>, and <a href="https://en.wikipedia.org/wiki/Frontier_(supercomputer)">Frontier</a>. These frameworks will incorporate general-purpose algebraic modeling systems, domain-specific modeling tools, automatic differentiation frameworks, numerical linear solvers, and numerical optimization solvers.
+          <li>
+          Building computational infrastructure for optimization with neural-network surrogate models that interface the machine learning frameworks with nonlinear programming solvers.
+        </ul>
+        </p>
+        
+    - name: "Energy Systems"
+      img: "/assets/img/fig-4.svg"
+      description: |
+        <p>
+        Society is confronting the unprecedented challenge of decarbonizing energy systems to mitigate climate change. To decarbonize the U.S. energy systems by 2050, we will need to produce at least 40% of the nation's total energy demand from wind and solar, which is far higher than the current 12%. Achieving this goal will require extensive research efforts on decision-making frameworks to design, plan, and operate decarbonized energy systems with high efficiency and reliability.
+        </p>
+        <p>
+        Our research group is dedicated to advancing the state of the art in theory, algorithms, and software implementations for complex decision-making problems in energy systems. Our research group applies our expertise in areas such as <a href="https://en.wikipedia.org/wiki/Mathematical_optimization">mathematical optimization</a>, <a href="https://en.wikipedia.org/wiki/Control_theory">control theory</a>, <a href="https://en.wikipedia.org/wiki/Machine_learning">machine learning</a>, and <a href="https://en.wikipedia.org/wiki/High_performance_computing">high-performance computing</a> to address the pressing challenges found within the energy systems landscape. Our ultimate goal is to develop computational technologies that contribute to the crucial task of decarbonizing our energy systems.
+        </p>
+        <p>
+        Specifically, we focus on the following areas:
+        <ul>
+        <li>
+        Simulation, modeling, and optimization of energy storage and conversion systems interacting with power grids.
+        <li>
+        Design and operation strategies for microgrids, data centers, electrified manufacturing facilities, and various industrial sectors interacting with power grids.
+        <li>
+        Modeling framework for multi-scale and heterogeneous energy networks.
+        </ul>
+        </p>
+    - name: "Process Systems Engineering"
+      img: "/assets/img/fig-5.svg"
+      description: |
+        <p>
+        All industrial products—from agricultural goods, and pharmaceuticals to advanced chemicals and materials—are produced in industrial process systems. Achieving low-cost production with minimal environmental and social impacts requires holistic design, operation, and control strategies, spanning single unit operations to international supply chains, and time-scales of seconds to decades.
+        </p>
+        <p>
+        Our research group advances the theory, methods, and software needed to build scalable, reusable models of process systems and to make high-quality decisions under uncertainty and intermittent operation. We draw on our research in <a href="https://en.wikipedia.org/wiki/Mathematical_optimization">mathematical optimization</a>, <a href="https://en.wikipedia.org/wiki/Control_theory">control theory</a>, and <a href="https://en.wikipedia.org/wiki/High_performance_computing">high-performance computing</a> to develop insights from detailed first-principles modeling to system-level <a href="https://en.wikipedia.org/wiki/Techno-economic_assessment">techno-economic assessment</a> and <a href="https://en.wikipedia.org/wiki/Life-cycle_assessment">environmental assessment</a>.
+        </p>
+        <p>
+        Specifically, we focus on:
+        <ul>
+        <li>
+        First-principles modeling of solvent-based carbon capture and electro-chemical processes, capturing thermodynamics, transport, reaction kinetics.
+        <li>
+        System-level design and real-time operational optimization for sector-coupled systems, including grid-interactions.
+        <li>
+        Integrated techno-economic and life-cycle environmental assessment to identify and design low-cost and sustainable processes.
+        </ul>
+        </p>
+
+      
