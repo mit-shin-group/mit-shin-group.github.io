@@ -154,6 +154,11 @@ people:
       bio: |
         Geunseo Song is a graduate student in the integrated Master's and Ph.D. program in Chemical Engineering at Ewha Womans University (advisor: Jonggeol Na). She received her bachelor's degree in Chemical Engineering at Ewha Womans University. Her previous research focused on optimizing hydrogen supply chain operations using hierarchical multi-agent reinforcement learning. Her research interests include optimization algorithms, machine learning, and their applications to energy systems.
       social: []
+    - name: "Byeongchan Ahn"
+      email: "abc42779@mit.edu"
+      img: "/assets/img/ahn.jpg"
+      bio: |
+        Byeongchan Ahn is a Ph.D. student in Chemical and Biological Engineering at Korea University (advisor: Wangyun Won). He received his bachelor's degree in Chemical Engineering from Kyung Hee University. His previous research has focused on sustainable process development and comprehensive evaluation methods, including techno-economic analysis and life cycle assessment. He has applied these approaches to various fields such as liquid organic hydrogen carriers (LOHC), CO₂ capture using dry sorbents, microalgae-based systems, and waste plastic upcycling. He is currently conducting research on the optimization of hydrogen supply chains based on LOHC, utilizing mixed-integer linear programming (MILP) models.
   alumni:
     - name: "Flemming Holtorf"
       role: "postdoc"
