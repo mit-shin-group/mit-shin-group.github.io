@@ -200,29 +200,36 @@ software:
     
 news:
   - date: "July 2024"
-    description: "Our paper 'Near-Optimal Performance of Stochastic Model Predictive Control' is accepted for publication in Mathematics of Operations Research"
+    description: |
+      Our paper "Near-Optimal Performance of Stochastic Model Predictive Control" is accepted for publication in Mathematics of Operations Research
     link: "https://arxiv.org/abs/2210.08599"
   - date: "November 2024"
     description: "Our recent work on solving AC optimal power flow on GPUs has been highlighted in NVIDIA's technical blog. This posting highlights how our team has exploited the capabilities of NVIDIA's new sparse direct solver, cuDSS, to solve challenging power system optimization problems."
     link: "https://developer.nvidia.com/blog/nvidia-cudss-library-removes-barriers-to-optimizing-the-us-power-grid/"
   - date: "July 2024"
-    description: "Joshua Pulsipher received the best presentation prize at JuMP-dev 2024 for the talk 'InfiniteExaModels.jl: Accelerating Infinite-Dimensional Optimization Problems on CPU & GPU', based on collaborative work with Sungho Shin, François Pacaud, and Mihai Anitescu."
+    description: |
+      Joshua Pulsipher received the best presentation prize at JuMP-dev 2024 for the talk "InfiniteExaModels.jl: Accelerating Infinite-Dimensional Optimization Problems on CPU & GPU", based on collaborative work with Sungho Shin, François Pacaud, and Mihai Anitescu.
     link: "https://jump.dev/prize/jump-dev-2024"
   - date: "February 2024"
-    description: "Our paper 'A graph-based modeling abstraction for optimization: Concepts and implementation in Plasmo.jl' has received the 2022 Outstanding Paper Award of the Mathematical Programming Computation."
+    description: |
+      Our paper "A graph-based modeling abstraction for optimization: Concepts and implementation in Plasmo.jl" has received the 2022 Outstanding Paper Award of the Mathematical Programming Computation.
     link: "https://link.springer.com/article/10.1007/s12532-022-00223-3"
     additional_link: "https://www.linkedin.com/feed/update/urn:li:activity:7166225846683230208/"
   - date: "January 2024"
-    description: "Our paper 'Accelerating optimal power flow with GPUs: SIMD abstraction of nonlinear programs and condensed-space interior-point methods' with F. Pacaud and M. Anitescu has been accepted for publication in PSCC 2024."
+    description: |
+      Our paper "Accelerating optimal power flow with GPUs: SIMD abstraction of nonlinear programs and condensed-space interior-point methods" with F. Pacaud and M. Anitescu has been accepted for publication in PSCC 2024.
     link: "https://arxiv.org/abs/2307.16830"
   - date: "January 2024"
-    description: "Our paper 'Parallel interior-point solver for block-structured nonlinear programs on SIMD/GPU architectures' with F. Pacaud, M. Schanen, D. A. Maldonado, and M. Anitescu has been accepted for publication in Optimization Methods and Software."
+    description: |
+      Our paper "Parallel interior-point solver for block-structured nonlinear programs on SIMD/GPU architectures" with F. Pacaud, M. Schanen, D. A. Maldonado, and M. Anitescu has been accepted for publication in Optimization Methods and Software.
     link: "https://arxiv.org/abs/2301.04869"
   - date: "November 2023"
-    description: "Sungho has received the W. David Smith, Jr. Graduate Publication Award for his paper 'Exponential decay of sensitivity in graph-structured nonlinear programs' coauthored with M. Anitescu and V. M. Zavala, published in SIAM Journal on Optimization."
+    description: |
+      Sungho has received the W. David Smith, Jr. Graduate Publication Award for his paper "Exponential decay of sensitivity in graph-structured nonlinear programs" coauthored with M. Anitescu and V. M. Zavala, published in SIAM Journal on Optimization.
     link: "https://www.aiche.org/community/sites/divisions-forums/computing-systems-technology-division-cast/blog/2023-aiche-cast-division-awards"
   - date: "October 2023"
-    description: "MadNLP and ExaModels team has been awarded the COIN-OR Cup! This award recognizes outstanding contributions to open-source operations research software development."
+    description: |
+      MadNLP and ExaModels team has been awarded the COIN-OR Cup! This award recognizes outstanding contributions to open-source operations research software development.
     link: "https://www.coin-or.org/coincup/"
     
 videos:
