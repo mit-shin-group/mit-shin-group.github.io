@@ -159,6 +159,7 @@ people:
       img: "/assets/img/ahn.jpg"
       bio: |
         Byeongchan Ahn is a Ph.D. student in Chemical and Biological Engineering at Korea University (advisor: Wangyun Won). He received his bachelor's degree in Chemical Engineering from Kyung Hee University. His previous research has focused on sustainable process development and comprehensive evaluation methods, including techno-economic analysis and life cycle assessment. He has applied these approaches to various fields such as liquid organic hydrogen carriers (LOHC), CO₂ capture using dry sorbents, microalgae-based systems, and waste plastic upcycling. He is currently conducting research on the optimization of hydrogen supply chains based on LOHC, utilizing mixed-integer linear programming (MILP) models.
+      social: []
   alumni:
     - name: "Flemming Holtorf"
       role: "postdoc"
