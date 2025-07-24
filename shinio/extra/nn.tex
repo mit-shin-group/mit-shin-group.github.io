@@ -1,0 +1,23 @@
+\node[circle,draw,scale=.5] (I1) at (-1,1/4) {};
+\node[circle,draw,scale=.5] (I2) at (-1,-1/4) {};
+\node[circle,draw,scale=.5] (O1) at (1,1/4) {};
+\node[circle,draw,scale=.5] (O2) at (1,-1/4) {};
+\foreach \y in {-1,...,1}
+{
+  \foreach \x in {-2,...,2}
+  {
+    \node[circle,draw,scale=.5] (N\x\y) at (\y/2,\x/4) {};
+  }
+}
+\foreach \xo in {-2,...,2}
+{
+  \draw[->] (I1.east) -- (N\xo-1.west);
+  \draw[->] (I2.east) -- (N\xo-1.west);
+  \draw[<-] (O1.west) -- (N\xo1.east);
+  \draw[<-] (O2.west) -- (N\xo1.east);
+  \foreach \xt in {-2,...,2}
+  {
+    \draw[->] (N\xo-1.east) -- (N\xt0.west);
+    \draw[->] (N\xo0.east) -- (N\xt1.west);
+  }
+}

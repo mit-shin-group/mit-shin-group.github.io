@@ -1,0 +1,35 @@
+\documentclass[letterpaper, 11pt]{article}
+
+\input{preamble}
+
+\begin{document}
+\thispagestyle{empty}
+\input{top}
+\input{education}
+\input{research-interest}
+\input{appointment}
+\input{awards}
+% \input{grants} 
+\input{mentoring}
+\input{teaching}
+% \input{services}
+% \input{affiliations}
+
+\subsection*{Selected Publications}
+\renewcommand*{\labelenumi}{[S\theenumi]}
+\nocitethes{*}
+\bibliographystylethes{custom}
+\bibliographythes{../bib/abet}
+
+% \input{presentations}
+% \input{software}
+% \input{references} 
+
+{\noindent\it Last updated: \today}
+
+\end{document}
+
+%%% Local Variables:
+%%% mode: LaTeX
+%%% TeX-master: "shin-short.tex"
+%%% End:

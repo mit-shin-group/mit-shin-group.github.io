@@ -1,0 +1,23 @@
+#!/bin/bash
+
+PWD=$pwd
+BASEDIR=$(dirname "$0")
+# compile latex
+cd $BASEDIR
+
+pdflatex -halt-on-error fig-1 >> fig-1.log
+pdflatex -halt-on-error fig-2 >> fig-2.log
+pdflatex -halt-on-error fig-3 >> fig-3.log
+pdflatex -halt-on-error fig-4 >> fig-4.log
+
+pdf2svg fig-1.pdf fig-1.svg
+pdf2svg fig-2.pdf fig-2.svg
+pdf2svg fig-3.pdf fig-3.svg
+pdf2svg fig-4.pdf fig-4.svg
+
+cp fig-1.svg ../img
+cp fig-2.svg ../img
+cp fig-3.svg ../img
+cp fig-4.svg ../img 
+
+cd $PWD

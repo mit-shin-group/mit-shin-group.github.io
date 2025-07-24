@@ -1,0 +1,42 @@
+\input{preamble}
+\begin{document}
+\begin{tikzpicture}[align=center]
+  \node (a) at (0,0) {};
+  \node (b) at (-2.75,0) {};
+  \node (c) at (6.5,0) {};
+  \node (e) at (4,1.5) {};
+  \node (f) at (0,1.5) {};
+  \node (g) at (0,3) {};
+  \node (h) at (4,3) {};
+  \node[draw, minimum width=80pt, minimum height=20pt] (sys) at (a) {System};
+  \node[draw, minimum width=80pt, minimum height=20pt] (sen) at (e) {Sensor};
+  \node[draw, minimum width=80pt, minimum height=20pt] (con) at (f) {Controller};
+  \draw[-latex] (sen) -- (con);
+  \draw[-latex] (con) -- (sys);
+  \draw[-latex] (sys) -| (sen);
+  \draw[-latex] (sys) -- (c);
+  \draw[-latex] (b) -- (sys);
+  \node[transform shape] at (g) {
+    \begin{tikzpicture}[scale=1.5]
+      \input{nn}
+    \end{tikzpicture}
+  };
+  \node[transform shape] at (h) {
+    \begin{tikzpicture}[scale=1.5]
+      \input{nn}
+    \end{tikzpicture}
+  };
+  \node at (.25,-1.5) {
+    \includegraphics[width=99pt,height=56.25pt]{battery.jpg} 
+  };
+  \node at (3.75,-1.5) {
+    \includegraphics[width=99pt,height=56.25pt]{hydrogen.png}
+  };
+  \node at (3.75,-3.5) {
+    \includegraphics[width=99pt,height=56.25pt]{microgrid.jpg}
+  };
+  \node at (.25,-3.5) {
+    \includegraphics[width=99pt,height=56.25pt]{data-center.jpg}
+  };
+\end{tikzpicture}
+\end{document}
