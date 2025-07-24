@@ -382,7 +382,7 @@ def deploy():
     subprocess.run(['git', 'init'], cwd=BUILD_DIR, check=True)
 
     # Set up the remote repository (assumes origin is set up)
-    subprocess.run(['git', 'remote', 'add', 'origin', 'git@github.com:MadNLP/madsuite.github.io.git'], cwd=BUILD_DIR, check=True)
+    subprocess.run(['git', 'remote', 'add', 'origin', 'git@github.com:mit-shin-group/mit-shin-group.github.io.git'], cwd=BUILD_DIR, check=True)
 
     # Checkout a new branch (or switch to it if it exists)
     subprocess.run(['git', 'checkout', '-B', branch_name], cwd=BUILD_DIR, check=True)
