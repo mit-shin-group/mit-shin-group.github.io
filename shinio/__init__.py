@@ -26,6 +26,7 @@ PREPRINT_BIB = pkg_resources.files(__package__).joinpath('bib/prep.bib')
 JOURNAL_BIB = pkg_resources.files(__package__).joinpath('bib/jrnl.bib')
 CONFERENCE_BIB = pkg_resources.files(__package__).joinpath('bib/conf.bib')
 SELECTED_BIB = pkg_resources.files(__package__).joinpath('bib/selected.bib')
+TEX_DIR = pkg_resources.files(__package__).joinpath('tex')
 
 def nav_html(nav_items):
     nav_html = ""
@@ -366,9 +367,18 @@ def serve():
     )
     server.serve(root=BUILD_DIR, port=8000) 
 
+def cv():
+    print("Generating CV...")
+    subprocess.run(['latexmk', 'shin'], cwd=TEX_DIR, check=True)
+    # Move assets to the build directory
+    assets_src = TEX_DIR.joinpath('shin.pdf')
+    assets_dest = os.path.join(BUILD_DIR, 'assets')
+    shutil.copy(assets_src, assets_dest)
+    
 def deploy():
     print("Running initial build...")
     build()
+    cv()
     
     """Deploy the contents of _build to the gh-pages branch."""
     # Define the branch name
@@ -396,5 +406,4 @@ def deploy():
     subprocess.run(['git', 'push', '--force', '--set-upstream', 'origin', branch_name], cwd=BUILD_DIR, check=True)
 
     print("Successfully deployed to GitHub Pages.")
-
 
