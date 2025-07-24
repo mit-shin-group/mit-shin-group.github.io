@@ -377,8 +377,8 @@ def cv():
     
 def deploy():
     print("Running initial build...")
-    build()
     cv()
+    build()
     
     """Deploy the contents of _build to the gh-pages branch."""
     # Define the branch name
