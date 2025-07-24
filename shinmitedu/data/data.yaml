@@ -1,0 +1,318 @@
+title: "ShinGroup @ MIT"
+email: "sushin@mit.edu"
+domain: "shin.mit.edu"
+
+intro: >
+  Welcome to the Shin Group’s website! We are a research group at the {Massachusetts Institute of Technology}, led by Professor {Sungho Shin}.
+
+overview: >
+  <p>
+  Our research group is dedicated to tackling the mathematical, computational, and practical challenges involved in making systematic decisions in complex systems. We strive to make contributions in the fields of {mathematical optimization}, {control theory}, {machine learning}, {process systems engineering}, and {energy systems}.
+  </p>
+  <p>
+  Here are some of our specific research interests:
+    <ul>
+    <li>
+    Developing scalable algorithms capable of addressing challenging {decision-making problems} in various engineering and society domains.
+    </li>
+    <li>
+    Advancing our understanding and developing algorithms for {machine learning} methods in {control} problems. 
+    </li>
+    <li> 
+    Building computational infrastructure for scalable and data-driven decision-making by harnessing the capabilities of modern  {high-performance computing}, particularly through the use of {GPU computing}.
+    </li>
+    <li>
+    Making tangible impacts in decision-making practices within the domains of {process systems engineering} and {energy systems} by introducing new modeling paradigms, algorithms, and software tools. 
+    </li>
+    </ul>
+    </p>
+
+values:
+  description: >    
+    Our research group values the following four equally important principles:
+  entries:    
+  - name: "Excellence in research"
+    description: "We are committed to conducting rigorous, original, and impactful research that advances scientific knowledge and contributes meaningfully to society while maintaining the highest ethical standards."
+  - name: "Supportive environment"
+    description: "We believe in supporting each other through mentorship, celebrating successes, and fostering a diverse and inclusive environment where everyone has the opportunity to grow and thrive."
+  - name: "Collaboration"
+    description: "We foster an environment of open collaboration and active knowledge sharing among team members and external collaborators."
+  - name: "Societal impact"
+    description: "We strive to ensure our research outcomes benefit society and address real-world challenges."
+    
+people:
+  pi:
+    name: "Sungho Shin"
+    title: "Assistant Professor"
+    img: "/assets/img/shin.jpg"
+    address: >-
+      Department of Chemical Engineering
+      <br>
+      Massachusetts Institute of Technology
+      <br> 
+      77 Massachusetts Avenue, Room 66-554
+      <br>
+      Cambridge, MA 02139, USA
+    email: sushin@mit.edu
+    phone: 617-715-5740
+    social:
+      - name: "Google Scholar"
+        url: "https://scholar.google.com/citations?user=_KaTyEwAAAAJ"
+      - name: "Github"
+        url: "https://github.com/sshin23"
+      - name: "LinkedIn"
+        url: "https://www.urledin.com/in/sungho-shin-92665416a"
+      - name: "CV"
+        url: "/assets/cvs/shin.pdf"
+    education:
+      - "Postdoc, Mathematics and Computer Science Division, Argonne National Laboratory"
+      - "Ph. D. in Chemical Engineering, University of Wisconsin-Madison"
+      - "B.S. in Mathematics and Chemical Engineering, Seoul National University"
+    affiliations:
+      - "{Department of Chemical Engineering}"
+      - "{Institute for Data, Systems and Society}"
+      - "{Center for Computational Science and Engineering}"
+    bio: >-
+        Sungho Shin is a Texaco-Mangelsdorf Career Development Chair Assistant Professor of the Chemical Engineering Department at Massachusetts Institute of Technology. Prior to joining MIT, he was a postdoctoral researcher at the Mathematics and Computer Science Division at Argonne National Laboratory &#40;supervisor: <a href="https://www.mcs.anl.gov/~anitescu/">Mihai Anitescu</a>&#41;. He received his Ph.D. from the University of Wisconsin-Madison &#40;advisor: <a href="http://zavalab.engr.wisc.edu">Victor M. Zavala</a>&#41;. He was a Summer intern at Los Alamos National Laboratory &#40;2020; worked with <a href="https://www.coffrin.com/">Carleton Coffrin</a> and  <a href="https://kaarthiksundar.github.io/">Kaarthik Sundar</a>&#41; and Argonne National Laboratory &#40;2018; worked with <a href="https://www.mcs.anl.gov/~anitescu/">Mihai Anitescu</a>&#41;. He was an undergraduate researcher at <a href="http://epel.snu.ac.kr/">Jong Min Lee</a>&#39;s group at Seoul National University. His research interests include model predictive control, optimization algorithms, and their applications to large-scale energy infrastructures &#40;such as natural gas and power networks&#41;. He is the main developer of the nonlinear optimization solver <a href="https://github.com/MadNLP/MadNLP.jl">MadNLP.jl</a> and the automatic differentiation/algebraic modeling tool <a href="https://github.com/exanauts/ExaModels.jl">ExaModels.jl</a>. He was the winner of the <a href="https://www.aiche.org/community/sites/divisions-forums/computing-systems-technology-division-cast/blog/2023-w-david-smith-jr-graduate-publication-award">W. David Smith, Jr. Graduate Publication Award</a>, <a href="http://castdiv.org/StudentPresentationAward.htm"> AIChE Annual Meeting CAST Directors’ Student Presentation Award</a>, <a href="https://www.adchem2021.org/young-author-award">IFAC ADCHEM Young Author Award</a>, <a href="https://www.nmpc2021.org/young-author-award"> IFAC NMPC Young Author Award</a>. He was a recipient of the Korea Presidential Science Fellowship, Kwanjeong Fellowship, and Grainger Wisconsin Distinguished Graduate Fellowship.
+  postdocs:
+    - name: "Dirk Lauinger"
+      email: "lauinger@mit.edu"
+      img: "/assets/img/lauinger.jpg"
+      bio: |
+        Dirk Lauinger is a postdoc researching mathematical optimization techniques for the planning and operation of sustainable and reliable energy and mobility systems. Spanning the disciplines of operations research, energy engineering, and industrial ecology, his research finds applications in renewable energy integration, energy storage, electric transportation, energy and material supply security, global material cycles, resource economics, and policy analysis. Prior to joining the Shin group, Dirk was a postdoc with Andy Sun at MIT Sloan and MITEI. Together with Andy's group, he developed decomposition procedures for large-scale AC optimal power flow problems with unit commitment and ranked second in terms of overall prize money in the third edition of the Grid Optimization challenge organized by the US DOE. He obtained his PhD, MSc, and BSc from EPFL.
+      social:
+        - name: "Website"
+          url: "https://www.dirklauinger.com"
+    - name: "Shaohui Liu"
+      email: "shaohuil@mit.edu"
+      img: "/assets/img/liu.jpg"
+      bio: |
+        Shaohui Liu is a postdoctoral associate in the Shin group working on demand response in decarbonized utility-scale energy systems. Shaohui’s current research focuses on using computational mathematics and machine learning tools to tackle challenging optimization and control problems in electric power grids. Prior to joining the Shin group at MIT, he received his Ph.D. in Electrical and Computer Engineering from the University of Texas at Austin (advisor: <a href="https://sites.utexas.edu/haozhu/">Hao Zhu</a>). Before joining UT, he spent 2 years as a PhD student at Stony Brook University and obtained his master’s degree in Computational Applied Math. He received his B.Sc. in applied mathematics with honors from Sichuan University (advisor: <a href="https://math.scu.edu.cn/info/1013/9318.htm">Hao Wang</a>). Shaohui was a summer intern with Los Alamos National Lab (mentors: <a href="https://sites.google.com/a/math.arizona.edu/misha-chertkov/">Misha Chertkov</a> and <a href="https://energy.mit.edu/profile/deepjyoti-deka/">Deepjyoti Deka</a>), Argonne National Lab (mentor: <a href="https://web.cels.anl.gov/~emconsta/index.php">Emil Constantinescu</a>), and Amazon AWS.
+      social: []
+    - name: "David Yang Shu"
+      email: "davidshu@mit.edu"
+      img: "/assets/img/shu.jpg"
+      bio: |
+        David Yang Shu is a postdoctoral associate in the Shin Group working on the nonlinear optimal design of carbon capture units under uncertainty. David’s work spans environmental life-cycle assessment, process optimization, and sustainable system design, with applications in carbon capture and storage technologies and the broader energy transition. During his doctoral studies at ETH Zurich (advisor: André Bardow, Department of Mechanical and Process Engineering), David studied the design and operation of net-zero energy systems employing multi-criterial optimization to evaluate trade-offs between economic and environmental objectives. Further, he applied bilevel optimization to model market interactions during the transition to net-zero energy systems. David contributed to the Horizon 2020 project DMX™ Demonstration in Dunkirk (3D) by performing life-cycle assessments for full-scale CCUS supply chains. He also worked on the Swiss demonstration project DemoUpCARMA, focusing on carbon dioxide transportation. David earned his M.S. in Energy Engineering at RWTH Aachen University in 2018 with a thesis on the operational optimization of industrial energy systems and his B.S. in Mechanical Engineering at RWTH Aachen University in 2016.
+      social:
+        - name: "Website"
+          url: "https://davidyangshu.github.io/research/"
+  graduates:
+    - name: "David Jin"
+      email: "jindavid@mit.edu"
+      img: "/assets/img/jin.jpg"
+      bio: |
+        David is a graduate student focused on designing GPU solvers for nonlinear optimization and using learning techniques to improve these optimizations. His broader research interest is in accelerating calculations using specific algorithms tailored for particular hardware, such as GPUs. He is particularly interested in sum-of-squares programming and semidefinite programming, with applications in robotics. David holds a B.S. in Information and Data Science from Caltech and a B.A. in Physics from Grinnell College. In his spare time, he enjoys playing percussion in both a symphony orchestra and a wind ensemble.
+      social: []
+    - name: "Wallace Tan"
+      email: "wtgy@mit.edu"
+      img: "/assets/img/tan.jpg"
+      bio: |
+        Wallace Tan is a graduate student who joined the group in 2024. He graduated from the National University of Singapore with a BEng in Chemical Engineering and a BSc in Mathematics. He is broadly interested in applied and computational mathematics, with a particular focus on stochastic systems and control. Outside of the lab, his hobbies include hitting the gym, competitive bowling, and Chinese chess (xiangqi).
+      social: []
+    - name: "Sanjay Johnson"
+      email: "sanjayjo@mit.edu"
+      img: "/assets/img/johnson.jpg"
+      bio: |
+        Sanjay is a graduate student researching grid-level energy systems and how optimization can allow new and existing technologies to provide further improvements to the power grid. His broader research interests include modeling for decarbonization and the intersection of public policy with engineering and technology. Sanjay received his B.S. from Carnegie Mellon in Chemical Engineering and Engineering & Public Policy. Outside of the lab, Sanjay enjoys reading, scuba diving, and playing soccer and ultimate frisbee.
+      social: []
+    - name: "Xiaomian Yang"
+      email: "xiaomian@mit.edu"
+      img: "/assets/img/yang.jpg"
+      bio: |
+        Xiaomian is a Ph.D. student who joined the Shin group in January 2025. Her research interests combine control and optimization theory with physics modeling for applications in battery energy storage systems. She is also interested in theory and is excited to begin her work on subspace identification and sample complexity methods. Xiaomian graduated from Stanford University with a degree in materials science and engineering and a minor in computer science. Outside of research, you can find her playing the flute, reading science fictions, and learning new board games.
+      social: []
+    - name: "Boxun Huang"
+      email: "boxun667@mit.edu"
+      img: "/assets/img/huang.jpeg"
+      bio: |
+        Boxun is a graduate student working on carbon capture modeling and optimization, with an additional focus on kinetic parameter estimation in reaction systems. He is broadly interested in process system engineering and numerical computation. Prior to joining the group, he obtained a B.S. in Chemical Engineering from the University of Minnesota. Outside of research, Boxun enjoys playing badminton and making cocktails for his friends.
+      social: []
+  undergraduates: []
+  visitors:
+    - name: "Geunseo Song"
+      email: "song650@mit.edu"
+      img: "/assets/img/song.jpg"
+      bio: |
+        Geunseo Song is a graduate student in the integrated Master's and Ph.D. program in Chemical Engineering at Ewha Womans University (advisor: Jonggeol Na). She received her bachelor's degree in Chemical Engineering at Ewha Womans University. Her previous research focused on optimizing hydrogen supply chain operations using hierarchical multi-agent reinforcement learning. Her research interests include optimization algorithms, machine learning, and their applications to energy systems.
+      social: []
+  alumni:
+    - name: "Flemming Holtorf"
+      role: "postdoc"
+    - name: "Chun Wai (Jerry) Fung"
+      role: "visitor"
+    - name: "Yeongwoo Son"
+      role: "visitor"
+    - name: "Natalie Chung"
+      role: "undergraduate"
+resources:
+  - description: "NVIDIA Technology Blog: NVIDIA cuDSS Library Removes Barriers to Optimizing the U.S. Power Grid"
+    url: "https://developer.nvidia.com/blog/nvidia-cudss-library-removes-barriers-to-optimizing-the-us-power-grid/"
+  - description: "Julia Discourse: ExaModels.jl and MadNLP.jl on GPUs"
+    url: "https://discourse.julialang.org/t/examodels-jl-and-madnlp-jl-on-gpus/111377"
+  - description: "Julia Discourse: AC Optimal Power Flow in various nonlinear optimization frameworks"
+    url: "https://discourse.julialang.org/t/ac-optimal-power-flow-in-various-nonlinear-optimization-frameworks/78486/81"
+  - description: "PowerTech 2025: Tutorial on GPU-Accelerated Optimization for Power Systems with MadNLP and ExaModels"
+    url: "https://madsuite.org/powertech2025" 
+    
+software:
+  description: |
+    Our research group is committed to developing, contributing to, and maintaining open-source software for scientific computing. In particular, we are highly dedicated to making contributions to packages within the {Julia Language} ecosystem, which serves as an excellent platform for implementing efficient numerical software. We are interested in a wide range of topics, including {numerical optimization}, {numerical linear algebra}, {automatic differentiation}, {algebraic modeling platforms}, and modeling tools for chemical and biological processes and energy systems. On this page, you will find a list of open-source development projects led by our research group.
+  entries:
+    - name: "MadNLP.jl"
+      url: "https://github.com/MadNLP/MadNLP.jl"
+      description: "A nonlinear programming solver based on the filter line-search interior point method (as in Ipopt) that can handle/exploit diverse classes of data structures, either on host or device memories."
+    - name: "MadIPM.jl"
+      url: "https://github.com/MadNLP/MadIPM.jl"
+      description: "MadIPM.jl is an extension of MadNLP.jl for linear and quadratic programming. It implements the Mehrotra predictor-corrector method, leading to faster convergence than the default filter line-search algorithm used in MadNLP."
+    - name: "ExaModels.jl"
+      url: "https://github.com/exanauts/ExaModels.jl"
+      description: "An algebraic modeling and automatic differentiation tool in Julia Language, specialized for SIMD abstraction of nonlinear programs."
+    - name: "ExaModelsExamples.jl"
+      url: "https://github.com/exanauts/ExaModelsExamles.jl"
+      description: "A collection of examples demonstrating the use of ExaModels.jl for various optimization problems, including power systems, optimal control problems, and COPS benchmark problems."
+    - name: "ExaModelsPower.jl"
+      url: "https://github.com/exanauts/ExaModelsPower.jl"
+      description: "ExaModelsPower.jl is a Julia package for modeling and solving power systems optimization problems, built on top of ExaModels.jl."
+    
+news:
+  - date: "April 2024"
+    description: "Our recent work on solving AC optimal power flow on GPUs has been highlighted in NVIDIA's technical blog. This posting highlights how our team has exploited the capabilities of NVIDIA's new sparse direct solver, cuDSS, to solve challenging power system optimization problems."
+    link: "https://developer.nvidia.com/blog/nvidia-cudss-library-removes-barriers-to-optimizing-the-us-power-grid/"
+  - date: "April 2024"
+    description: "Joshua Pulsipher received the best presentation prize at JuMP-dev 2024 for the talk 'InfiniteExaModels.jl: Accelerating Infinite-Dimensional Optimization Problems on CPU & GPU', based on collaborative work with Sungho Shin, François Pacaud, and Mihai Anitescu."
+    link: "https://jump.dev/prize/jump-dev-2024"
+  - date: "March 2024"
+    description: "Our paper 'A graph-based modeling abstraction for optimization: Concepts and implementation in Plasmo.jl' has received the 2022 Outstanding Paper Award of the Mathematical Programming Computation."
+    link: "https://link.springer.com/article/10.1007/s12532-022-00223-3"
+    additional_link: "https://www.linkedin.com/feed/update/urn:li:activity:7166225846683230208/"
+  - date: "January 2024"
+    description: "Our paper 'Accelerating optimal power flow with GPUs: SIMD abstraction of nonlinear programs and condensed-space interior-point methods' with F. Pacaud and M. Anitescu has been accepted for publication in PSCC 2024."
+    link: "https://arxiv.org/abs/2307.16830"
+  - date: "January 2024"
+    description: "Our paper 'Parallel interior-point solver for block-structured nonlinear programs on SIMD/GPU architectures' with F. Pacaud, M. Schanen, D. A. Maldonado, and M. Anitescu has been accepted for publication in Optimization Methods and Software."
+    link: "https://arxiv.org/abs/2301.04869"
+  - date: "December 2023"
+    description: "MadNLP and ExaModels team has been awarded the COIN-OR Cup! This award recognizes outstanding contributions to open-source operations research software development."
+    link: "https://www.coin-or.org/coincup/"
+  - date: "November 2023"
+    description: "Sungho has received the W. David Smith, Jr. Graduate Publication Award for his paper 'Exponential decay of sensitivity in graph-structured nonlinear programs' coauthored with M. Anitescu and V. M. Zavala, published in SIAM Journal on Optimization."
+    link: "https://www.aiche.org/community/sites/divisions-forums/computing-systems-technology-division-cast/blog/2023-aiche-cast-division-awards"
+  - date: "November 2023"
+    description: "A new preprint titled 'Accelerating optimal power flow with GPUs: SIMD abstraction of nonlinear programs and condensed-space interior-point methods' with F. Pacaud and M. Anitescu has been posted on arXiv."
+    link: "https://www.linkedin.com/feed/update/urn:li:activity:7092161760568213504/"
+  - date: "October 2023"
+    description: "Our paper 'Accelerating condensed interior-point methods on SIMD/GPU architectures' with F. Pacaud, M. Schanen, D. A. Maldonado, and M. Anitescu has been published in Journal of Optimization Theory and Applications."
+    link: "https://link.springer.com/article/10.1007/s10957-022-02129-5"
+  - date: "September 2023"
+    description: "Our paper 'Near-optimal distributed linear-quadratic regulator for networked systems' with Y. Lin, G. Qu, A. Wierman, and M. Anitescu has been published in SIAM Journal on Control and Optimization."
+    link: "https://epubs.siam.org/doi/10.1137/22M1489836"
+  - date: "August 2023"
+    description: "Sungho has accepted an offer from Massachusetts Institute of Technology to become an assistant professor in the chemical engineering department starting from Summer 2024."
+    link: "https://www.linkedin.com/posts/sshin23_optimization-control-energysystems-activity-7059537568035442688-BE7t?utm_source=share&utm_medium=member_desktop"
+    
+videos:
+  - date: "April 2024"
+    presenter: "Sungho Shin"
+    description: "Large-Scale Nonlinear Programming on GPUs: State-of-the-Art and Future Prospects"
+    youtube: MzV9Crph4BA?si=1u50D-4JuFTisjN9
+links:
+  - name: "MIT"
+    url: "https://web.mit.edu"
+  - name: "Sungho Shin"
+    url: "people"
+  - name: "Massachusetts Institute of Technology"
+    url: "https://web.mit.edu"
+  - name: "Chemical Engineering Department"
+    url: "https://cheme.mit.edu"
+  - name: "Department of Chemical Engineering"
+    url: "https://cheme.mit.edu"
+  - name: "Julia Language"
+    url: "https://julialang.org/"
+  - name: "single instruction, multiple data"
+    url: "https://en.wikipedia.org/wiki/Single_instruction,_multiple_data"
+  - name: "nonlinear program"
+    url: "https://en.wikipedia.org/wiki/Nonlinear_programming"
+  - name: "nonlinear programs"
+    url: "https://en.wikipedia.org/wiki/Nonlinear_programming"
+  - name: "nonlinear programming"
+    url: "https://en.wikipedia.org/wiki/Nonlinear_programming"
+  - name: "MadNLP"
+    url: "https://github.com/MadNLP/MadNLP.jl"
+  - name: "ExaModels"
+    url: "https://github.com/exanauts/ExaModels.jl"
+  - name: "model predictive control"
+    url: "https://en.wikipedia.org/wiki/Model_predictive_control"
+  - name: "graph theory"
+    url: "https://en.wikipedia.org/wiki/Graph_theory"
+  - name: "statistics"
+    url: "https://en.wikipedia.org/wiki/Statistics"
+  - name: "reinforcement learning"
+    url: "https://en.wikipedia.org/wiki/Reinforcement_learning"
+  - name: "GPU computing"
+    url: "https://en.wikipedia.org/wiki/Graphics_processing_unit"
+  - name: "distributed computing"
+    url: "https://en.wikipedia.org/wiki/Distributed_computing"
+  - name: "email Sungho"
+    url: "mailto:{sushin@mit.edu}"
+  - name: "numerical linear algebra"
+    url: "https://en.wikipedia.org/wiki/Numerical_linear_algebra"
+  - name: "algebraic modeling platforms"
+    url: "https://en.wikipedia.org/wiki/General_algebraic_modeling_system"
+  - name: "control theory"
+    url: "https://en.wikipedia.org/wiki/Control_theory"
+  - name: "control"
+    url: "https://en.wikipedia.org/wiki/Control_theory"
+  - name: "mathematical optimization"
+    url: "https://en.wikipedia.org/wiki/Mathematical_optimization"
+  - name: "numerical optimization"
+    url: "https://en.wikipedia.org/wiki/Mathematical_optimization"
+  - name: "machine learning"
+    url: "https://en.wikipedia.org/wiki/Machine_learning"
+  - name: "process systems engineering"
+    url: "https://en.wikipedia.org/wiki/Systems_engineering"
+  - name: "energy systems"
+    url: "https://en.wikipedia.org/wiki/Energy_systems"
+  - name: "exascale supercomputers"
+    url: "https://en.wikipedia.org/wiki/Exascale_computing"
+  - name: "Aurora"
+    url: "https://en.wikipedia.org/wiki/Aurora_(supercomputer)"
+  - name: "Summit"
+    url: "https://en.wikipedia.org/wiki/Summit_(supercomputer)"
+  - name: "Frontier"
+    url: "https://en.wikipedia.org/wiki/Frontier_(supercomputer)"
+  - name: "high-performance computing"
+    url: "https://en.wikipedia.org/wiki/High_performance_computing"
+  - name: "decision-making problems"
+    url: "https://en.wikipedia.org/wiki/Optimization_problem"
+  - name: "mathematical optimization problems"
+    url: "https://en.wikipedia.org/wiki/Optimization_problem"
+  - name: "automatic differentiation"
+    url: "https://en.wikipedia.org/wiki/Automatic_differentiation"
+  - name: "techno-economic assessment"
+    url: "https://en.wikipedia.org/wiki/Techno-economic_assessment"
+  - name: "environmental assessment"
+    url: "https://en.wikipedia.org/wiki/Life-cycle_assessment"
+  - name: "Department of Chemical Engineering"
+    url: "https://cheme.mit.edu/"
+  - name: "Institute for Data, Systems and Society"
+    url: "https://idss.mit.edu/"
+  - name: "Center for Computational Science and Engineering"
+    url: "https://cse.mit.edu/"
+
+facilities:
+  description: |
+    Shin research group owns the following local computing resources available for prototyping and testing the proposed software ecosystem:
+  entries:
+    - name: "shin-login"
+      description: |
+        A storage node equipped with 20TB of SSD storage, running Linux Ubuntu 24.04 LTS. The storage node is used for hosting the home directories of the project members, which will be used for storing the source code and research results. The system utilizes a ZFS file system with a RAID configuration for data redundancy and integrity, with daily backups to an external hard drive.
+    - name: "shin-compute-000"
+      description: |
+        A compute node equipped with two Intel Xeon Platinum 8160 CPUs (48 cores), 384GB RAM, and two NVIDIA GV100 GPUs, running Linux Ubuntu 24.04 LTS. This node is designated for the development and testing of software based on NVIDIA GPU architecture. This server will be used for hosting a Jupyter notebook server for tutorial sessions at conferences and workshops, as well as for the 4-week MIT IAP course on GPU-accelerated nonlinear optimization.      
+    - name: "shin-compute-001"
+      description: |
+        A compute node equipped with two Intel Xeon Gold 6130 CPUs (32 cores), 256GB RAM, and two NVIDIA GV100 GPUs, running Linux Ubuntu 24.04 LTS. This node is designated for the development and testing of software based on NVIDIA GPU architecture.
+    - name: "shin-compute-002"
+      description: |
+        A compute node equipped with two Intel Xeon Gold 6130 CPUs (32 cores), 256GB RAM, along with a Radeon VII GPU, running Linux Ubuntu 24.04 LTS. The Radeon VII GPU supports development and testing of the proposed software on AMD accelerator-based HPC systems, such as the Frontier supercomputer at Oak Ridge National Laboratory.

@@ -1,0 +1,13 @@
+[project]
+name = "shinmitedu"
+version = "0.1.0"
+description = "Website generator for the MIT Shin Group"
+authors = [
+    { name = "Sungho Shin", email = "sushin@mit.edu" },
+]
+readme = "README.md"
+license = { text = "MIT" }
+requires-python = ">=3.8"
+dependencies = [
+    "markdown>=3.3.4",
+]
