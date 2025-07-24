@@ -27,6 +27,7 @@ JOURNAL_BIB = pkg_resources.files(__package__).joinpath('bib/jrnl.bib')
 CONFERENCE_BIB = pkg_resources.files(__package__).joinpath('bib/conf.bib')
 SELECTED_BIB = pkg_resources.files(__package__).joinpath('bib/selected.bib')
 TEX_DIR = pkg_resources.files(__package__).joinpath('tex')
+ASSET_DIR = pkg_resources.files(__package__).joinpath('assets')
 
 def nav_html(nav_items):
     nav_html = ""
@@ -372,7 +373,7 @@ def cv():
     subprocess.run(['latexmk', 'shin'], cwd=TEX_DIR, check=True)
     # Move assets to the build directory
     assets_src = TEX_DIR.joinpath('shin.pdf')
-    assets_dest = os.path.join(BUILD_DIR, 'assets')
+    assets_dest = ASSET_DIR.joinpath('assets')
     shutil.copy(assets_src, assets_dest)
     
 def deploy():
