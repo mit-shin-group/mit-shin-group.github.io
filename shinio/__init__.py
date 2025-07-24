@@ -372,9 +372,7 @@ def cv():
     print("Generating CV...")
     subprocess.run(['latexmk', 'shin'], cwd=TEX_DIR, check=True)
     # Move assets to the build directory
-    assets_src = TEX_DIR.joinpath('shin.pdf')
-    assets_dest = ASSET_DIR.joinpath('assets')
-    shutil.copy(assets_src, assets_dest)
+    shutil.copy(TEX_DIR.joinpath('shin.pdf'), ASSET_DIR)
     
 def deploy():
     print("Running initial build...")
