@@ -321,7 +321,7 @@ links:
 
 facilities:
   description: |
-    Shin research group owns the following local computing resources available for prototyping and testing the proposed software ecosystem:
+    Shin research group owns the following local computing resources, which are used for development and testing of software tools, as well as for conducting educational activities. 
   entries:
     - name: "shin-login"
       description: |
