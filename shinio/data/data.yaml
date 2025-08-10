@@ -81,7 +81,7 @@ people:
       - name: "LinkedIn"
         url: "https://www.urledin.com/in/sungho-shin-92665416a"
       - name: "CV"
-        url: "/assets/cvs/shin.pdf"
+        url: "/assets/shin.pdf"
     education:
       - "Postdoc, Mathematics and Computer Science Division, Argonne National Laboratory"
       - "Ph. D. in Chemical Engineering, University of Wisconsin-Madison"
