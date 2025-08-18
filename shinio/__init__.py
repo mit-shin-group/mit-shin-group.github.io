@@ -248,8 +248,14 @@ def formatted_social(social):
 def formatted_bib(bib_file, letter):
     bib_data = parse_file(bib_file)
     style = find_plugin('pybtex.style.formatting', 'unsrt')()
+    
+    def bold_names(entry_text):
+        return entry_text.replace("Sungho Shin", "<strong>Sungho Shin</strong>")
+    
     return "\n".join(reversed([
-        """<tr valign="top"><td>[{letter}{index}]</td><td>{entry}</td></tr>""".format(letter=letter, index=i, entry=entry.text.render_as('html'))
+        """<tr valign="top"><td>[{letter}{index}]</td><td>{entry}</td></tr>""".format(
+            letter=letter, index=i, entry=bold_names(entry.text.render_as('html'))
+        )
         for i, entry in enumerate(style.format_bibliography(bib_data), start=1)
     ]))
 
