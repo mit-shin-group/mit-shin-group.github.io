@@ -146,7 +146,6 @@ people:
       bio: |
         Boxun is a graduate student working on carbon capture modeling and optimization, with an additional focus on kinetic parameter estimation in reaction systems. He is broadly interested in process system engineering and numerical computation. Prior to joining the group, he obtained a B.S. in Chemical Engineering from the University of Minnesota. Outside of research, Boxun enjoys playing badminton and making cocktails for his friends.
       social: []
-  undergraduates: []
   visitors:
     - name: "Byeongchan Ahn"
       email: "abc42779@mit.edu"
@@ -158,7 +157,7 @@ people:
       email: "archimj@mit.edu"
       img: "/assets/img/jhunjhunwala.jpg"
       bio: |
-        Archim is a high school student who joined the group in summer 2025. Archim is broadly interested in computer science, especially mathematical optimization and compilers. Outside of lab, Archim enjoys rock climbing, rubiks cubes, and chess.
+        Archim is a high school student who joined the group as a HIP-SAT intern in summer 2025, and is continuing his research since the end of the internship program. Archim is broadly interested in computer science, especially mathematical optimization and compilers. Outside of lab, Archim enjoys rock climbing, Rubik's cubes, and chess.
       social: []
   alumni:
     - name: "Flemming Holtorf"
