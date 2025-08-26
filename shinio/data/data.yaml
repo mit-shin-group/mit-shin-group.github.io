@@ -51,10 +51,10 @@ values:
   entries:    
   - name: "Excellence in research"
     description: "We are committed to conducting rigorous, original, and impactful research that advances scientific knowledge and contributes meaningfully to society while maintaining the highest ethical standards."
-  - name: "Supportive environment"
-    description: "We believe in supporting each other through mentorship, celebrating successes, and fostering a diverse and inclusive environment where everyone has the opportunity to grow and thrive."
+  - name: "Welcoming and supportive environment"
+    description: "We believe in a diverse and inclusive environment where everyone has the opportunity to grow and thrive, strong mentorship for students with any background, and celebrating successes."
   - name: "Collaboration"
-    description: "We foster an environment of open collaboration and active knowledge sharing among team members and external collaborators."
+    description: "We foster an environment of open and fair collaboration and active knowledge sharing among team members and external collaborators."
   - name: "Societal impact"
     description: "We strive to ensure our research outcomes benefit society and address real-world challenges."
     
@@ -138,7 +138,7 @@ people:
       email: "xiaomian@mit.edu"
       img: "/assets/img/yang.jpg"
       bio: |
-        Xiaomian is a Ph.D. student who joined the Shin group in January 2025. Her research interests combine control and optimization theory with physics modeling for applications in battery energy storage systems. She is also interested in theory and is excited to begin her work on subspace identification and sample complexity methods. Xiaomian graduated from Stanford University with a degree in materials science and engineering and a minor in computer science. Outside of research, you can find her playing the flute, reading science fictions, and learning new board games.
+        Xiaomian is a Ph.D. candidate in Chemical Engineering and the Program in Polymers and Soft Matter (PPSM), who joined the Shin group in January 2025. Her research interests combine control and optimization theory with physics modeling, with applications in batteries and soft matter systems. She is also interested in advancing computational method development and is currently focusing on subspace identification and sample complexity analysis. Prior to joining MIT, Xiaomian earned her B.S. from Stanford University in materials science and engineering and a minor in computer science. Outside of research, you can find her playing the flute, reading science fiction, and learning new board games.
       social: []
     - name: "Boxun Huang"
       email: "boxun667@mit.edu"
@@ -146,19 +146,18 @@ people:
       bio: |
         Boxun is a graduate student working on carbon capture modeling and optimization, with an additional focus on kinetic parameter estimation in reaction systems. He is broadly interested in process system engineering and numerical computation. Prior to joining the group, he obtained a B.S. in Chemical Engineering from the University of Minnesota. Outside of research, Boxun enjoys playing badminton and making cocktails for his friends.
       social: []
-  undergraduates: []
   visitors:
-    - name: "Geunseo Song"
-      email: "song650@mit.edu"
-      img: "/assets/img/song.jpg"
-      bio: |
-        Geunseo Song is a graduate student in the integrated Master's and Ph.D. program in Chemical Engineering at Ewha Womans University (advisor: Jonggeol Na). She received her bachelor's degree in Chemical Engineering at Ewha Womans University. Her previous research focused on optimizing hydrogen supply chain operations using hierarchical multi-agent reinforcement learning. Her research interests include optimization algorithms, machine learning, and their applications to energy systems.
-      social: []
     - name: "Byeongchan Ahn"
       email: "abc42779@mit.edu"
       img: "/assets/img/ahn.jpg"
       bio: |
         Byeongchan Ahn is a Ph.D. student in Chemical and Biological Engineering at Korea University (advisor: Wangyun Won). He received his bachelor's degree in Chemical Engineering from Kyung Hee University. His previous research has focused on sustainable process development and comprehensive evaluation methods, including techno-economic analysis and life cycle assessment. He has applied these approaches to various fields such as liquid organic hydrogen carriers (LOHC), CO₂ capture using dry sorbents, microalgae-based systems, and waste plastic upcycling. He is currently conducting research on the optimization of hydrogen supply chains based on LOHC, utilizing mixed-integer linear programming (MILP) models.
+      social: []
+    - name: "Archim Jhunjhunwala"
+      email: "archimj@mit.edu"
+      img: "/assets/img/jhunjhunwala.jpg"
+      bio: |
+        Archim is a high school student who joined the group as a HIP-SAT intern in summer 2025, and is continuing his research since the end of the internship program. Archim is broadly interested in computer science, especially mathematical optimization and compilers. Outside of lab, Archim enjoys rock climbing, Rubik's cubes, and chess.
       social: []
   alumni:
     - name: "Flemming Holtorf"
@@ -169,6 +168,8 @@ people:
       role: "visitor"
     - name: "Natalie Chung"
       role: "undergraduate"
+    - name: "Geunseo Song" 
+      role: "visitor"
 resources:
   - description: "NVIDIA Technology Blog: NVIDIA cuDSS Library Removes Barriers to Optimizing the U.S. Power Grid"
     url: "https://developer.nvidia.com/blog/nvidia-cudss-library-removes-barriers-to-optimizing-the-us-power-grid/"
