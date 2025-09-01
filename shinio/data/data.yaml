@@ -159,6 +159,18 @@ people:
       bio: |
         Archim is a high school student who joined the group as a HIP-SAT intern in summer 2025, and is continuing his research since the end of the internship program. Archim is broadly interested in computer science, especially mathematical optimization and compilers. Outside of lab, Archim enjoys rock climbing, Rubik's cubes, and chess.
       social: []
+    - name: "Jeongdong Kim"
+      email: "jdong9604@yonsei.ac.kr"
+      img: "/assets/img/jdong.jpg"
+      bio: |
+        Jeongdong's current research focuses on applying mathematical programming and machine learning to tackle stochastic optimization challenges in the co-optimization of renewable power management systems. His work particularly emphasizes the role of reinforcement learning for energy storage sizing and the dynamic operation of power-to-fuel systems under region-specific renewable uncertainty. He received his Ph.D. in Chemical and Biomolecular Engineering from Yonsei University (advised by Prof.Il Moon) and received his B.Sc. in Chemical Engineering from Sungkyunkwan University. 
+      social: []
+    - name: "Yurim Kim"
+      email: "jdong9604@yonsei.ac.kr"
+      img: "/assets/img/yurim.jpg"
+      bio: |
+        Yurim focuses on formulating and solving mixed-integer nonlinear optimization problems to support operating decisions in hydrogen production systems under uncertainty. Her research project aims to develop cost-effective and low-carbon hydrogen production strategies that are adaptable to various system conditions.
+      social: []
   alumni:
     - name: "Flemming Holtorf"
       role: "postdoc"
