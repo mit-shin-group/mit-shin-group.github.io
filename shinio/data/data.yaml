@@ -344,7 +344,7 @@ facilities:
         A compute node equipped with two Intel Xeon Platinum 8160 CPUs (48 cores), 384GB RAM, and two NVIDIA GV100 GPUs, running Linux Ubuntu 24.04 LTS. This node is designated for the development and testing of software based on NVIDIA GPU architecture. 
     - name: "shin-compute-001"
       description: |
-        A compute node equipped with two Intel Xeon Gold 6130 CPUs (32 cores), 256GB RAM, and two NVIDIA GV100 GPUs, running Linux Ubuntu 24.04 LTS. This node is designated for the development and testing of software based on NVIDIA GPU architecture.
+        A compute node equipped with two Intel Xeon Gold 6130 CPUs (32 cores), 1TB, and two NVIDIA GV100 GPUs, running Linux Ubuntu 24.04 LTS. This node is designated for the development and testing of software based on NVIDIA GPU architecture.
     - name: "shin-compute-002"
       description: |
         A compute node equipped with two Intel Xeon Gold 6130 CPUs (32 cores), 256GB RAM, along with a Radeon VII GPU, running Linux Ubuntu 24.04 LTS. The Radeon VII GPU supports development and testing of the proposed software on AMD accelerator-based HPC systems, such as the Frontier supercomputer at Oak Ridge National Laboratory.
