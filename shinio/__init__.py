@@ -270,6 +270,7 @@ def generate_people_html(output):
     </div>
     <div class="right">
     <h3>{people['pi']['name']}</h3>
+    <p>
     {people['pi']['title']}
     <br>
     {people['pi']['address']}
@@ -277,6 +278,13 @@ def generate_people_html(output):
     [ <a href="mailto:{people['pi']['email']}">{people['pi']['email']}</a> | <a href="tel:{people['pi']['phone']}">{people['pi']['phone']}</a> ]
     <br>
     { formatted_social(people['pi']['social']) }
+    </p>
+    <h5>Administrative Assistant</h5>
+    <p>
+        {people['admin']['name']}
+    <br>
+    [ <a href="mailto:{people['admin']['email']}">{people['admin']['email']}</a> | <a href="tel:{people['admin']['phone']}">{people['admin']['phone']}</a> ]
+    </p>
     </div>
     </div>
     <h4>Affiliations </h4>
