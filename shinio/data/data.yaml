@@ -153,6 +153,12 @@ people:
       bio: |
         Boxun is a graduate student working on carbon capture modeling and optimization, with an additional focus on kinetic parameter estimation in reaction systems. He is broadly interested in process system engineering and numerical computation. Prior to joining the group, he obtained a B.S. in Chemical Engineering from the University of Minnesota. Outside of research, Boxun enjoys playing badminton and making cocktails for his friends.
       social: []
+    - name: "Anne Gvozdjak"
+      email: "annegv@mit.edu"
+      img: "/assets/img/gvozdjak.jpg"
+      bio: |
+        Anne Gvozdjak is a MEng student in Electrical Engineering and Computer Science (EECS) whose research focuses on applying machine learning and physics modeling tools to the grid impacts of large data center loads, with broader interests in grid optimization and decarbonization. Anne received her B.S. from MIT in EECS and Business Analytics. Outside research, she enjoys reading and writing fiction, watching hockey, and baking sweets.
+      social: []
   visitors:
     - name: "Byeongchan Ahn"
       email: "abc42779@mit.edu"
