@@ -279,12 +279,6 @@ def generate_people_html(output):
     <br>
     { formatted_social(people['pi']['social']) }
     </p>
-    <h5>Administrative Assistant</h5>
-    <p>
-        {people['admin']['name']}
-    <br>
-    [ <a href="mailto:{people['admin']['email']}">{people['admin']['email']}</a> | <a href="tel:{people['admin']['phone']}">{people['admin']['phone']}</a> ]
-    </p>
     </div>
     </div>
     <h4>Affiliations </h4>
@@ -316,7 +310,7 @@ def generate_people_html(output):
     <div class="right">
     <h3>{people['admin']['name']}</h3>
     <p>
-    [ <a href="mailto:{people['admin']['email']}">{people['admin']['email']}</a>  | <a href="tel:{people['admin']['phone']}">{people['admin']['phone']}</a> | {people['pi']['address']}]
+    [ <a href="mailto:{people['admin']['email']}">{people['admin']['email']}</a>  | <a href="tel:{people['admin']['phone']}">{people['admin']['phone']}</a> | Room {people['admin']['office']}]
     </p>
     </div>
     </div>
