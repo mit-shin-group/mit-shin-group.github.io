@@ -314,6 +314,7 @@ def generate_people_html(output):
     </p>
     </div>
     </div>
+    <hr>\n
     {
     "<hr>\n".join([
     f"""
