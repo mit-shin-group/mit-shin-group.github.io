@@ -306,6 +306,20 @@ def generate_people_html(output):
     <h4>Bio</h4>
     {people['pi']['bio']}
     <hr>
+    \n
+    <h2>{'Administrative Assistant'}</h2>
+    \n
+    <div class="full">
+    <div class="left">
+    <img class="profile-picture" src={people['admin']['img']} alt="photo" class="img-fluid">
+    </div>
+    <div class="right">
+    <h3>{people['admin']['name']}</h3>
+    <p>
+    [ <a href="mailto:{people['admin']['email']}">{people['admin']['email']}</a>  | <a href="tel:{people['admin']['phone']}">{people['admin']['phone']}</a> | {people['pi']['address']}]
+    </p>
+    </div>
+    </div>
     {
     "<hr>\n".join([
     f"""
