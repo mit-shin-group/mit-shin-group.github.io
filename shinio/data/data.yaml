@@ -160,6 +160,12 @@ people:
       bio: |
         Anne Gvozdjak is a MEng student in Electrical Engineering and Computer Science (EECS) whose research focuses on applying machine learning and physics modeling tools to the grid impacts of large data center loads, with broader interests in grid optimization and decarbonization. Anne received her B.S. from MIT in EECS and Business Analytics. Outside of research, she enjoys reading and writing fiction, watching hockey, and baking sweets.
       social: []
+    - name: "Joseph Choi"
+      email: "jsphchoi@mit.edu"
+      img: "/assets/img/choi.jpg"
+      bio: |
+        Joseph is a Ph.D. student in Chemical Engineering whose research interests include developing scalable modeling frameworks and improving GPU-accelerated nonlinear optimization for multi-scale systems. He joined the Shin Group in January 2026 after graduating from the University of Connecticut with a B.S.E. in Chemical Engineering. In his free time, he enjoys various physical activities including going to the gym, running, and bouldering.
+      social: []
   visitors:
     - name: "Byeongchan Ahn"
       email: "abc42779@mit.edu"
