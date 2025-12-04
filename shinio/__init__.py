@@ -340,7 +340,7 @@ def generate_people_html(output):
         ])
     }
     """
-     for (rolename, role) in [('Postdoctoral Associates', 'postdocs'), ('Graduate Students', 'graduates'), #('Undergraduate Students', 'undergraduates'), 
+     for (rolename, role) in [('Postdoctoral Associates', 'postdocs'), ('Graduate Students', 'graduates'), ('Undergraduate Students', 'undergraduates'), 
                               ('Visitors', 'visitors')]])
     }
     <hr>

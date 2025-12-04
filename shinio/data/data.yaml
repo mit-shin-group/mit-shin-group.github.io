@@ -166,13 +166,14 @@ people:
       bio: |
         Joseph is a Ph.D. student in Chemical Engineering whose research interests include developing scalable modeling frameworks and improving GPU-accelerated nonlinear optimization for multi-scale systems. He joined the Shin Group in January 2026 after graduating from the University of Connecticut with a B.S.E. in Chemical Engineering. In his free time, he enjoys various physical activities including going to the gym, running, and bouldering.
       social: []
-  visitors:
-    - name: "Byeongchan Ahn"
-      email: "abc42779@mit.edu"
-      img: "/assets/img/ahn.jpg"
+  undergraduates:
+    - name: "Elliott Slaughter"
+      email: "erslaugh@mit.edu"
+      img: "/assets/img/slaughter.jpg"
       bio: |
-        Byeongchan Ahn is a Ph.D. student in Chemical and Biological Engineering at Korea University (advisor: Wangyun Won). He received his bachelor's degree in Chemical Engineering from Kyung Hee University. His previous research has focused on sustainable process development and comprehensive evaluation methods, including techno-economic analysis and life cycle assessment. He has applied these approaches to various fields such as liquid organic hydrogen carriers (LOHC), CO₂ capture using dry sorbents, microalgae-based systems, and waste plastic upcycling. He is currently conducting research on the optimization of hydrogen supply chains based on LOHC, utilizing mixed-integer linear programming (MILP) models.
-      social: []
+        Elliott (Ellie) is an undergraduate at MIT, double majoring in computer science and chemical engineering, with broad interests in AI infrastructure, large-scale optimization, and entrepreneurship. Her research is in GPU computing, with a focus on designing efficient algorithms for solving large problems on modern parallel architecture. Ellie is a Goldwater Scholar and active member of MIT’s Sloan Business Club and AI Alignment Club. When she's not working, you can find her cooking fusion dishes, going on runs, and playing an arguably unhealthy amount of NYT puzzles and card games.
+      social: 
+  visitors:
     - name: "Archim Jhunjhunwala"
       email: "archimj@mit.edu"
       img: "/assets/img/jhunjhunwala.jpg"
@@ -201,6 +202,8 @@ people:
     - name: "Natalie Chung"
       role: "undergraduate"
     - name: "Geunseo Song" 
+      role: "visitor"
+    - name: "Byeongchan Ahn"
       role: "visitor"
 resources:
   - description: "NVIDIA Technology Blog: NVIDIA cuDSS Library Removes Barriers to Optimizing the U.S. Power Grid"
