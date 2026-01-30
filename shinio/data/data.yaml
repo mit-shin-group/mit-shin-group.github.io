@@ -180,6 +180,12 @@ people:
       bio: |
         Amiya K Jana is an associate professor in the Department of Chemical Engineering, Indian Institute of Technology (IIT) Kharagpur. He has received research funds as principal investigator (PI) from DST, DAE (BRNS), CSIR, MHRD, ISRO, among others. He has published about 160 research articles in several international journals of repute. Dr. Jana is the sole author of 3 text books in the area of numerical analysis, modeling, simulation and control. He has received numerous awards and recognition, including fellow of the institution of chemical engineers (FIChemE, UK), fellow of the royal society of chemistry (FRSC, UK), Fulbright fellowship (USA), Faculty Excellence Award (IIT Kharagpur), Fellow of the Alexander von Humboldt Foundation (Germany), World’s Top 2% Scientist for six consecutive years (Stanford University, 2020 - 25), editorial board member of Scientific Reports (Nature Group), Frontiers in Control Engineering (Frontiers Publisher, Switzerland). His research focuses on renewable energy, clean fuel, desalination, process integration and control.
       social: []
+    - name: "Jonggeol Na"
+      email: "jgna@ewha.ac.kr"
+      img: "/assets/img/na.jpg"
+      bio: |
+        Jonggeol Na is an Associate Professor and Ewha Young Fellow in the Department of Chemical Engineering and Materials Science at Ewha Womans University. His research integrates process systems engineering, machine learning, and multiscale simulation to optimize advanced process systems. Currently, his work focuses on solving national-scale supply chain optimization problems linking power and chemical industries. He also heads a Self-Driving Lab in Institute for Multiscale Matter and Systems (IMMS) where he develops an operating system (OS) for autonomous experimental design and optimization. Prior to his current position, he was a postdoctoral fellow at Carnegie Mellon University (advisor: Nick Sahinidis) and a visiting researcher at MIT (advisor: Richard D. Braatz). He received his Ph.D. from Seoul National University (advisor: Won Bo Lee).
+      social: []
     - name: "Archim Jhunjhunwala"
       email: "archimj@mit.edu"
       img: "/assets/img/jhunjhunwala.jpg"
